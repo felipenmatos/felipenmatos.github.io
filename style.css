@@ -1,0 +1,318 @@
+*  {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-header {
+    margin-left: 400px;
+}
+
+.btn-header a {
+    color: #FFF;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.btn-header a:hover {
+    color: rgb(194, 194, 11);
+}
+
+header button {
+    width: 78px;
+    height: 40px;
+    margin-right: 70px;
+    border: 0px;
+    border-radius: 16px;
+    background-color: rgb(194, 194, 11);
+    color: #FFF;
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color:rgb(160, 160, 1) ;
+}
+
+.perfil {
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project {
+    height: 1400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project2 {
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre {
+    width: 300px;
+    margin-left: 315px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.sobre p {
+    margin-left: 20px;
+}
+
+.buttonSobre {
+    margin-left: 5px;
+}
+
+.imgfamily {
+    width: 300px;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: -310px;
+    transition: all 0.5s;
+}
+
+.imgfamily:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+.icon-qualificacoes {
+    height: 200px;
+}
+
+.experiencia {
+    height: 400px;
+}
+
+.contato {
+    height: 400px;
+}
+
+footer {
+    height: 70px;
+}
+
+.img-perfil {
+    width: 450px;
+    height: 460px;
+    margin-top: 70px;
+    margin-left: 70px;
+    transition: all 0.5s;
+}
+
+.img-perfil:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+.title-perfil {
+    display: flex;
+    margin-top: -130px;
+    margin-left: 300px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    color: #FFFFFF;
+    position: absolute;
+    animation: go-back 1s;
+}
+
+@keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } 
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    height: 460px;
+    margin-top: 70px;
+    margin-right: 70px;
+    text-align: center;
+}
+
+.description {
+    margin-top: 25px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(53, 13, 90);
+}
+
+.description-img {
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgb(53, 13, 90);
+    font-family: 'Kanit', sans-serif;
+}
+
+.seta {
+    width: 20px;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.projetos {
+    width: 620px;
+    height: 600px;
+    margin-top: 280px;
+    color: #FFFFFF;
+}
+
+.projetos h1 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+}
+
+.projetos p {
+    margin-top: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+}
+
+.projetos button {
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: rgb(194, 194, 11);
+    border: 0px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+}
+
+.projetos button:hover{
+    background-color:rgb(160, 160, 1) ;
+}
+
+.img-project {
+    width: 300px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.column {
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+}
+
+.column img {
+    width: 320px;
+    justify-content: space-between;
+    height: 200px;
+    border:#FFFFFF;
+    border-style:groove;
+    border-radius: 5px;
+}
+
+.img1 {
+    margin-top: 10px;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+.img2 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.img-project button {
+    width: 150px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+
+    background-color: rgb(194, 194, 11);
+    border: 0px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+}
+
+.img-project button:hover{
+    background-color:rgb(160, 160, 1) ;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    color: rgb(53, 13, 90);
+}
+
+.icon {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon img {
+    cursor: pointer;
+}
+
+.icon1 {
+    margin-left: -5px;
+}
+
+.icon2 {
+    margin-left: 15px;
+}
+
+.h1contato {
+    text-align: center;
+}
+
+.h2contato {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cel {
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+    color: #FFFFFF;
+}
+
+#teste{position:relative}
+#teste:hover{top:-2px;box-shadow:0 2px 2px #666}
