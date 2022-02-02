@@ -65,6 +65,14 @@ header button:hover {
     align-items: center;
 }
 
+.project3 {
+    height: 2500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .sobre {
     width: 300px;
     margin-left: 315px;
@@ -79,6 +87,10 @@ header button:hover {
 
 .buttonSobre {
     margin-left: 5px;
+}
+
+.buttonSobre2 {
+    margin-left: 225px;
 }
 
 .imgfamily {
@@ -319,3 +331,51 @@ footer {
 
 #teste{position:relative}
 #teste:hover{top:-2px;box-shadow:0 2px 2px #666}
+
+.container-project {
+    margin-top: 50px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px;
+    border-style:groove;
+    border-right: 0px;
+    border-left: 0px;
+    border-color: black;
+}
+
+.container-project2 {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px;
+    border-style:groove;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-color: black;
+}
+
+.text-project h2 {
+    margin-bottom: 10px;
+    font-style: italic;
+    color: rgb(196, 196, 196);
+}
+
+.descrition-project {
+    width: 430px;
+    height: 120px;
+    text-align: justify;
+}
+
+.container-project button {
+    margin-top: -10px;
+}
+
+.my-repository {
+    margin-top: -700px;
+}
