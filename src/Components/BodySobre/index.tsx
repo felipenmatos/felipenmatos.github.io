@@ -32,12 +32,13 @@ const Container = styled.div`
   flex-direction: column;
 
   @media (max-width: 768px) {
-    width: 100px
+    width: 100%;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 300px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
 `;
 
@@ -52,6 +53,16 @@ const Row = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+  }
 `;
 
 const PhotoFamily = styled.img`
@@ -65,6 +76,15 @@ const PhotoFamily = styled.img`
     -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
     filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
   }
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 270px;
+    margin-left: 5px;
 `;
 
 const Text = styled.p`
@@ -72,6 +92,16 @@ const Text = styled.p`
   font-family: "Kanit", sans-serif;
   font-weight: 400;
   color: #ffffff;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
 `;
 
 const Button = styled.button`
@@ -86,6 +116,11 @@ const Button = styled.button`
   cursor: pointer;
   font-family: "Kanit", sans-serif;
   font-weight: 400;
+
+  @media (max-width: 768px) {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
 `;
 
 export default BodySobre;

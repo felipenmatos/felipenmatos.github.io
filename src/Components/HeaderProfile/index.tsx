@@ -96,7 +96,7 @@ const TitlePage = styled.h1`
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    margin-left: -240px;
+    margin-left: -200px;
   }
 `;
 
