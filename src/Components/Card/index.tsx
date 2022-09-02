@@ -3,9 +3,10 @@ import styled from "styled-components";
 
 type Photo = {
   photo: string;
+  link: string;
 };
 
-function Card({ photo }: Photo) {
+function Card({ photo, link }: Photo) {
   return (
     <Container>
       <Header>
@@ -14,7 +15,7 @@ function Card({ photo }: Photo) {
         <Circle />
       </Header>
       <Photo src={photo} />
-      <Button>Acessar Repositório</Button>
+      <Button href={link}>Acessar Repositório</Button>
     </Container>
   );
 }
@@ -64,7 +65,7 @@ const Photo = styled.img`
   height: 50%;
 `;
 
-const Button = styled.div`
+const Button = styled.a`
   width: 180px;
   height: 40px;
   margin-top: 30px;
@@ -79,6 +80,7 @@ const Button = styled.div`
   cursor: pointer;
   font-family: "Kanit", sans-serif;
   font-weight: 400;
+  text-decoration: none;
 `;
 
 export default Card;

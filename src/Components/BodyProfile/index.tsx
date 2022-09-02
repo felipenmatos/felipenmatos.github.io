@@ -1,7 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 function BodyProfile() {
+  const navigate = useNavigate();
+
+  function clickProject() {
+    navigate("/Projetos");
+  }
+
   return (
     <Container>
       <ContainerTitle>
@@ -13,7 +20,7 @@ function BodyProfile() {
           desenvolvidos em HTML, CSS, JAVASCRIPT, REACT. Essas são minhas
           principais ferramentas.
         </TextBody>
-        <Button>Saber Mais</Button>
+        <Button onClick={() => clickProject()}>Saber Mais</Button>
       </ContainerTitle>
     </Container>
   );

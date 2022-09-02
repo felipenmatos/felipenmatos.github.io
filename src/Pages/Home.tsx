@@ -6,6 +6,10 @@ import Header from "../Components/Header";
 import HeaderProfile from "../Components/HeaderProfile";
 import imgProject1 from "../../src/icons/images/Projeto1.jpg";
 import imgProject2 from "../../src/icons/images/projeto3.jpg";
+import imgProject3 from "../../src/icons/images/projeto7.jpg";
+import imgProject4 from "../../src/icons/images/Project4.png";
+import imgProject5 from "../../src/icons/images/Project5.png";
+import imgProject6 from "../../src/icons/images/Project6.png";
 import Footer from "../Components/Footer";
 
 const Home = () => {
@@ -13,7 +17,7 @@ const Home = () => {
     <Container>
       <Header />
       <HeaderProfile
-        title="Portfolio"
+        title="Portfólio"
         description="Desenvolvedor Front -End com cursos de especialização na área de
             atuação. Atuando desde março de 2021 como programador profissional.
             Felipe é um desenvolvedor empenhado em fazer entregas com qualidade
@@ -22,20 +26,34 @@ const Home = () => {
       />
       <BodyProfile />
       <RowCard>
-        <Card photo={imgProject1} />
-        <Card photo={imgProject2} />
+        <Card
+          photo={imgProject1}
+          link="https://github.com/felipenmatos/minimalist_website"
+        />
+        <Card
+          photo={imgProject2}
+          link="https://github.com/felipenmatos/website_fotografo"
+        />
       </RowCard>
       <RowCard>
-        <Card photo={imgProject1} />
-        <Card photo={imgProject2} />
+        <Card
+          photo={imgProject3}
+          link="https://github.com/felipenmatos/atividade4-curso-react"
+        />
+        <Card
+          photo={imgProject4}
+          link="https://github.com/felipenmatos/clickbeard_felipe"
+        />
       </RowCard>
       <RowCard>
-        <Card photo={imgProject1} />
-        <Card photo={imgProject2} />
-      </RowCard>
-      <RowCard>
-        <Card photo={imgProject1} />
-        <Card photo={imgProject2} />
+        <Card
+          photo={imgProject5}
+          link="https://github.com/felipenmatos/site-space"
+        />
+        <Card
+          photo={imgProject6}
+          link="https://github.com/felipenmatos/consult-repo"
+        />
       </RowCard>
       <Footer />
       <FooterPage>

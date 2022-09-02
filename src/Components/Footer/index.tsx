@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import iconLinkedIn from "../../icons/linkedin-light.svg";
+import iconGithub from "../../icons/github-light.svg";
 
 function Footer() {
   return (
     <Container>
       <Title>Contato</Title>
       <RowIcons>
-        <Icon />
-        <Icon />
+        <IconLinkedIn href="https://www.linkedin.com/in/felipe-nonato-604577113/" />
+        <Icon href="https://github.com/felipenmatos" />
       </RowIcons>
       <Contato>(75) 99921-8852</Contato>
       <Contato>notfelipe2@hotmail.com</Contato>
@@ -39,10 +41,20 @@ const RowIcons = styled.div`
   width: 100px;
 `;
 
-const Icon = styled.img`
+const IconLinkedIn = styled.a`
   width: 30px;
   height: 30px;
   cursor: pointer;
+  background-image: url(${iconLinkedIn});
+  background-repeat: no-repeat;
+`;
+
+const Icon = styled.a`
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-image: url(${iconGithub});
+  background-repeat: no-repeat;
 `;
 
 const Contato = styled.p`

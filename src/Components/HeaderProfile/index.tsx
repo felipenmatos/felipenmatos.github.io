@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import imgProfile from "../../icons/images/img-perfil.png";
 import arrow from "../../icons/arrow-right.svg";
+import { useNavigate } from "react-router-dom";
 
 type HeaderType = {
   title: string;
@@ -10,6 +11,12 @@ type HeaderType = {
 };
 
 function HeaderProfile({ title, description, label }: HeaderType) {
+  const navigate = useNavigate();
+
+  function click() {
+    navigate("/Sobre");
+  }
+
   return (
     <Container>
       <ContainerCard>
@@ -20,7 +27,7 @@ function HeaderProfile({ title, description, label }: HeaderType) {
         <ContainerDescription>
           <Description>{description}</Description>
           <Label>{label}</Label>
-          <Button />
+          <Button onClick={() => click()} />
         </ContainerDescription>
       </ContainerCard>
     </Container>

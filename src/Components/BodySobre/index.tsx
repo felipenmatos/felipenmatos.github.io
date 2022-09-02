@@ -1,8 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import photoFamily from "../../icons/images/familia.jpeg";
+import { useNavigate } from "react-router-dom";
 
 function BodySobre() {
+  const navigate = useNavigate();
+
+  function click() {
+    navigate("/Projetos");
+  }
+
   return (
     <Container>
       <Title>Sobre Felipe</Title>
@@ -20,7 +27,7 @@ function BodySobre() {
           principal motivação e inspiração, eles são minha base.
         </Text>
       </Row>
-      <Button>Veja meus projetos</Button>
+      <Button onClick={() => click()}>Veja meus projetos</Button>
     </Container>
   );
 }
