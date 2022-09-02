@@ -5,10 +5,18 @@ import { NavLink as Link } from "react-router-dom";
 function Header() {
   return (
     <Container>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/Sobre">Sobre</NavLink>
-      <NavLink to="/Projetos">Projetos</NavLink>
-      <NavLink to="/Qualificacoes">Qualificações</NavLink>
+      <NavLink to="/" activeStyle>
+        Home
+      </NavLink>
+      <NavLink to="/Sobre" activeStyle>
+        Sobre
+      </NavLink>
+      <NavLink to="/Projetos" activeStyle>
+        Projetos
+      </NavLink>
+      <NavLink to="/Qualificacoes" activeStyle>
+        Qualificações
+      </NavLink>
     </Container>
   );
 }

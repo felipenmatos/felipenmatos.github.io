@@ -97,6 +97,7 @@ const TitlePage = styled.h1`
     display: flex;
     flex-direction: column;
     margin-left: -200px;
+    font-size: 70px;
   }
 `;
 
