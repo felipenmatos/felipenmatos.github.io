@@ -1,0 +1,91 @@
+import React from "react";
+import styled from "styled-components";
+import photoFamily from "../../icons/images/familia.jpeg";
+
+function BodySobre() {
+  return (
+    <Container>
+      <Title>Sobre Felipe</Title>
+      <Row>
+        <PhotoFamily src={photoFamily} />
+        <Text>
+          Me chamo Felipe, mas pode me chamar de Lipe. Sou baiano, nascido em
+          Nazaré, município do interior da Bahia, já fui Contador, Coordenador
+          financeiro, Gerente Administrativo. Tenho formação acadêmica em
+          Ciências Contábeis, mas especialização na área de TI (Desenvolvimento
+          de Softwares), costumo ser constante e criativo no que costumo fazer.
+          Meus principais hobbies são: Desenhar, Assistir Filmes e Series,
+          Jogar, Correr e Desenvolver Design. Sou pai do Théo e marido da
+          Natália. Tenho uma cachorrinha chamada Sol. Minha família é minha
+          principal motivação e inspiração, eles são minha base.
+        </Text>
+      </Row>
+      <Button>Veja meus projetos</Button>
+    </Container>
+  );
+}
+
+const Container = styled.div`
+  width: 40%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    width: 100px
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    margin-bottom: 100px;
+  }
+`;
+
+const Title = styled.h1`
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-size: 70px;
+  color: #ffffff;
+`;
+
+const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+`;
+
+const PhotoFamily = styled.img`
+  width: 300px;
+  height: 400px;
+  margin-top: 20px;
+  margin-left: -210px;
+  transition: all 0.5s;
+
+  :hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+  }
+`;
+
+const Text = styled.p`
+  width: 50%;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+`;
+
+const Button = styled.button`
+  width: 150px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: -80px;
+  background-color: #b10044;
+  color: #fff;
+  border: 0px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+`;
+
+export default BodySobre;
