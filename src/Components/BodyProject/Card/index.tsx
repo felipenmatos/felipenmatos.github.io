@@ -5,15 +5,21 @@ type CardProjectType = {
   title: string;
   description: string;
   textButton: string;
+  link: string;
 };
 
-function CardProject({ title, description, textButton }: CardProjectType) {
+function CardProject({
+  title,
+  description,
+  textButton,
+  link,
+}: CardProjectType) {
   return (
     <Container>
       <Title>{title}</Title>
       <RowDescription>
         <Description>{description}</Description>
-        <Button>{textButton}</Button>
+        <Button href={link}>{textButton}</Button>
       </RowDescription>
     </Container>
   );
@@ -61,11 +67,15 @@ const Description = styled.p`
   font-size: 16px;
 `;
 
-const Button = styled.button`
+const Button = styled.a`
   width: 150px;
   height: 40px;
   margin-top: 30px;
   margin-left: -80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   background-color: #b10044;
   color: #fff;
   border: 0px;
@@ -73,6 +83,7 @@ const Button = styled.button`
   cursor: pointer;
   font-family: "Kanit", sans-serif;
   font-weight: 400;
+  text-decoration: none;
 `;
 
 export default CardProject;

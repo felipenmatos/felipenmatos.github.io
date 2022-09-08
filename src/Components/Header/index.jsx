@@ -38,6 +38,7 @@ const NavLink = styled(Link)`
   color: #ffffff;
   cursor: pointer;
   text-decoration: none;
+
   @media (max-width: 768px) {
     font-family: "Kanit", sans-serif;
     font-weight: 400;

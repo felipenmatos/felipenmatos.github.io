@@ -5,6 +5,7 @@ import HeaderProfile from "../Components/HeaderProfile";
 import Footer from "../Components/Footer";
 import Title from "../Components/BodyProject/Title";
 import CardProject from "../Components/BodyProject/Card";
+import BodyTechnology from "../Components/BodyTechnology";
 
 const Qualificacoes = () => {
   return (
@@ -20,64 +21,77 @@ const Qualificacoes = () => {
         title="Programação com JavaScript"
         description="Digital Innovation One"
         textButton="Abrir LinkedIn"
+        link="https://www.linkedin.com/in/felipe-nonato-604577113/"
       />
       <CardProject
         title="
         Primeiros passos para começar a programar "
         description="Digital Innovation One"
         textButton="Abrir LinkedIn"
+        link="https://www.linkedin.com/in/felipe-nonato-604577113/"
       />
       <CardProject
         title="Lógica de Programação"
         description="Digital Innovation One"
         textButton="Abrir LinkedIn"
+        link="https://www.linkedin.com/in/felipe-nonato-604577113/"
       />
       <CardProject
         title="Estrutura de Dados e Algoritimos"
         description="Digital Innovation One"
         textButton="Abrir LinkedIn"
+        link="https://www.linkedin.com/in/felipe-nonato-604577113/"
       />
       <CardProject
         title="Bootcamp Web Developer"
         description="Digital Innovation One"
         textButton="Abrir LinkedIn"
+        link="https://www.linkedin.com/in/felipe-nonato-604577113/"
       />
       <CardProject
         title="Curso intensivo de desenvolvimento de softwares Full Stack"
         description="Cubos Academy"
         textButton="Abrir LinkedIn"
+        link="https://www.linkedin.com/in/felipe-nonato-604577113/"
       />
       <CardProject
         title="
         JavaScript Completo ES6"
         description="Origamid"
         textButton="Abrir LinkedIn"
+        link="https://www.linkedin.com/in/felipe-nonato-604577113/"
       />
       <CardProject
         title="Trabalhando com Componentes em React "
         description="Digital Innovation One"
         textButton="Abrir LinkedIn"
+        link="https://www.linkedin.com/in/felipe-nonato-604577113/"
       />
       <CardProject
         title="Novo React com Hooks do Básico ao Avançado"
         description="Udemy"
         textButton="Abrir LinkedIn"
+        link="https://www.linkedin.com/in/felipe-nonato-604577113/"
       />
       <CardProject
         title="Desenvolvimento em React Native"
         description="Rocketseat"
         textButton="Abrir LinkedIn"
+        link="https://www.linkedin.com/in/felipe-nonato-604577113/"
       />
       <CardProject
         title="Primeiros passos com Dart"
         description="Digital Innovation One"
         textButton="Abrir LinkedIn"
+        link="https://www.linkedin.com/in/felipe-nonato-604577113/"
       />
       <CardProject
         title="Trabalhando com variáveis e condicionais no Dart"
         description="Digital Innovation One"
         textButton="Abrir LinkedIn"
+        link="https://www.linkedin.com/in/felipe-nonato-604577113/"
       />
+      <BodyTechnology />
       <Footer />
       <FooterPage>
         <Text>c 2022 . built with care. by Felipe Nonato </Text>
@@ -108,21 +122,6 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-  }
-`;
-
-const RowCard = styled.div`
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 50%;
-
-  @media (max-width: 768px) {
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 `;
 

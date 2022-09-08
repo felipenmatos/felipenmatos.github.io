@@ -17,49 +17,46 @@ const Projetos = () => {
       />
       <Title title="Meus Repositórios" />
       <CardProject
-        title="Recriando a tela de login do Instagram"
-        description="Neste projeto tive como atividade de um curso intensivo de desenvolvimento web, desenvolver/recriar a tela de login do Instagram. Saiba mais clicando no botão para verificar meus códigos."
-        textButton="Abrir Repositório"
-      />
-      <CardProject
-        title="Home-Page Netflix"
-        description="Ampliando conhecimentos sobre carousel, resolvi desenvolver a home-page do Netflix. Saiba mais clicando no botão para verificar meus códigos."
-        textButton="Abrir Repositório"
-      />
-      <CardProject
         title="Projeto Origamid"
         description="O projeto trata sobre desenvolvimento completo de um website responsivel de forma a conhecer mais como os componentes devem se comportar nas telas e seus respectivos tamanhos. Saiba mais clicando no botão para verificar meus códigos."
         textButton="Abrir Repositório"
+        link="https://github.com/felipenmatos/projeto-origamid"
       />
       <CardProject
         title="Conversor de Moedas"
         description="Brincando um pouco com o JavaScript, resolvi desenvolver um conversor de moedas com base em conhecimentos externos. Saiba mais clicando no botão para verificar meus códigos."
         textButton="Abrir Repositório"
+        link="https://github.com/felipenmatos/atividade3-curso-react"
       />
       <CardProject
         title="Gerenciador de Tarefas"
         description="este projeto desenvolvi um gerenciador de tarefas utilizando React, no qual tem a funcionalidade de cadastrar, consultar, deletar e ordenar tarefas. Saiba mais clicando no botão para verificar meus códigos."
         textButton="Abrir Repositório"
+        link="https://github.com/felipenmatos/atividade4-curso-react"
       />
       <CardProject
         title="Modelo básico de Website para Fotógrafos"
         description="Aqui consta um modelo básico de site voltado para fotógrafos com . Saiba mais clicando no botão para verificar meus códigos."
         textButton="Abrir Repositório"
+        link="https://github.com/felipenmatos/website_fotografo"
       />
       <CardProject
         title="Site Space"
         description="Neste projeto desenvolvi um site com tema viagem ao espaço, utilizando React, Typescript, styled-components e Hooks."
         textButton="Abrir Repositório"
+        link="https://github.com/felipenmatos/site-space"
       />
       <CardProject
         title="Sistema de Barbearia"
         description="O sistema consiste em um modelo de gerenciador de funcionarios e agendamento de clientes. O projeto foi desenvolvido utilizando React, Context, styled-components, Hooks."
         textButton="Abrir Repositório"
+        link="https://github.com/felipenmatos/clickbeard_felipe"
       />
       <CardProject
         title="Consulta Repos"
         description="Trata-se de um site simples de consulta de repositórios no qual pude integrar com a Api disponível do Github"
         textButton="Abrir Repositório"
+        link="https://github.com/felipenmatos/consult-repo"
       />
       <Footer />
       <FooterPage>
@@ -91,21 +88,6 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-  }
-`;
-
-const RowCard = styled.div`
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 50%;
-
-  @media (max-width: 768px) {
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 `;
 

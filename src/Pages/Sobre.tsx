@@ -1,11 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import BodyProfile from "../Components/BodyProfile";
-import Card from "../Components/Card";
 import Header from "../Components/Header";
 import HeaderProfile from "../Components/HeaderProfile";
-import imgProject1 from "../../src/icons/images/Projeto1.jpg";
-import imgProject2 from "../../src/icons/images/projeto3.jpg";
 import Footer from "../Components/Footer";
 import BodySobre from "../Components/BodySobre";
 
@@ -49,21 +45,6 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-  }
-`;
-
-const RowCard = styled.div`
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 50%;
-
-  @media (max-width: 768px) {
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 `;
 
