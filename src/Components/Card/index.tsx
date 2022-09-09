@@ -14,7 +14,7 @@ function Card({ photo, link }: Photo) {
         <Circle />
         <Circle />
       </Header>
-      <Photo src={photo} />
+      <PhotoProfile src={photo} />
       <Button href={link}>Acessar Repositório</Button>
     </Container>
   );
@@ -60,7 +60,7 @@ const Circle = styled.div`
   background-color: #d9d9d9;
 `;
 
-const Photo = styled.img`
+const PhotoProfile = styled.img`
   width: 90%;
   height: 50%;
 `;
