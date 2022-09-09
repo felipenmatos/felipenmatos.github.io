@@ -47,10 +47,10 @@ const Title = styled.h1`
 `;
 
 const Row = styled.div`
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 `;
 
 const Img = styled.img`

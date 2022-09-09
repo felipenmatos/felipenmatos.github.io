@@ -26,16 +26,19 @@ function CardProject({
 }
 
 const Container = styled.div`
-  width: 700px;
+  width: 600px;
   height: 200px;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  background-color: #ffffff;
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 8px;
+  box-shadow: 10px 5px 5px rgb(36, 36, 36);
 
   @media (max-width: 768px) {
     width: 400px;
-    height: 350px;
+    height: 320px;
     display: flex;
     flex-direction: column;
     border-top: 1px solid #000;
@@ -44,8 +47,9 @@ const Container = styled.div`
 `;
 
 const Title = styled.p`
-  color: #ffffff;
+  color: #000;
   font-size: 20px;
+  font-weight: bold;
 `;
 
 const RowDescription = styled.div`
@@ -54,8 +58,10 @@ const RowDescription = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid gray;
 
   @media (max-width: 768px) {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -63,8 +69,11 @@ const RowDescription = styled.div`
 
 const Description = styled.p`
   width: 70%;
-  color: #ffffff;
+  color: #000;
   font-size: 16px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Button = styled.a`
@@ -84,6 +93,10 @@ const Button = styled.a`
   font-family: "Kanit", sans-serif;
   font-weight: 400;
   text-decoration: none;
+
+  @media (max-width: 768px) {
+    margin-left: 10px;
+  }
 `;
 
 export default CardProject;

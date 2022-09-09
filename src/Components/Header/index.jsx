@@ -43,7 +43,7 @@ const NavLink = styled(Link)`
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 12px;
     color: #ffffff;
     cursor: pointer;
   }
