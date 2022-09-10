@@ -188,6 +188,8 @@ const Modal = styled.img`
 `;
 
 const Close = styled.img`
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   margin-top: -1%;
   margin-left: 80%;

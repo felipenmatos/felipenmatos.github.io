@@ -17,14 +17,14 @@ function BodySobre() {
         <PhotoFamily src={photoFamily} />
         <Text>
           Me chamo Felipe, mas pode me chamar de Lipe. Sou baiano, nascido em
-          Nazaré, município do interior da Bahia, já fui Contador, Coordenador
-          financeiro, Gerente Administrativo. Tenho formação acadêmica em
-          Ciências Contábeis, mas especialização na área de TI (Desenvolvimento
-          de Softwares), costumo ser constante e criativo no que costumo fazer.
-          Meus principais hobbies são: Desenhar, Assistir Filmes e Series,
-          Jogar, Correr e Desenvolver Design. Sou pai do Théo e marido da
-          Natália. Tenho uma cachorrinha chamada Sol. Minha família é minha
-          principal motivação e inspiração, eles são minha base.
+          Nazaré, município do interior da Bahia. Tenho formação de
+          especialização em Desenvolvimento de Softwares, também alguns cursos
+          que complementam e consolidam novos conhecimentos. Costumo ser
+          constante e criativo no que costumo fazer. Meus principais hobbies
+          são: Desenhar, Assistir Filmes e Series, Jogar, Correr e Desenvolver
+          Design. Sou pai do Théo e marido da Natália. Tenho uma cadelinha
+          chamada Sol. Minha família é minha principal motivação e inspiração,
+          eles são minha base.
         </Text>
       </Row>
       <Button onClick={() => click()}>Veja meus projetos</Button>

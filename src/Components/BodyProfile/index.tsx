@@ -17,8 +17,9 @@ function BodyProfile() {
           Ao longo do meu aprendizado desenvolvi alguns projetos para praticar
           todo o conhecimento que venho adquirindo, seja em cursos, bootcamps ou
           até mesmo fuçando códigos e desvendado curiosidades. Meus projetos são
-          desenvolvidos em HTML, CSS, JAVASCRIPT, REACT. Essas são minhas
-          principais ferramentas.
+          desenvolvidos em HTML, CSS, JAVASCRIPT, REACT, REACT NATIVE,
+          TYPESCRIPT, SASS, JEST, HOOKS, STORYBOOK. Essas são minhas principais
+          ferramentas.
         </TextBody>
         <Button onClick={() => clickProject()}>Saber Mais</Button>
       </ContainerTitle>

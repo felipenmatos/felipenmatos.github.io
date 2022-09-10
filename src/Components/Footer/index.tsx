@@ -12,7 +12,7 @@ function Footer() {
         <Icon href="https://github.com/felipenmatos" />
       </RowIcons>
       <Contato>(75) 99921-8852</Contato>
-      <Contato>notfelipe2@hotmail.com</Contato>
+      <Contato>felipenfrontend@gmail.com</Contato>
     </Container>
   );
 }

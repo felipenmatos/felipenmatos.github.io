@@ -18,7 +18,7 @@ function Header() {
           setQualifications(false);
         }}
         to="/"
-        style={home ? { color: "rgb(36, 36, 36)" } : { color: "#ffffff" }}
+        style={home ? { color: "gray" } : { color: "#ffffff" }}
       >
         Início
       </NavLink>
@@ -30,7 +30,7 @@ function Header() {
           setProject(false);
           setQualifications(false);
         }}
-        style={sobre ? { color: "rgb(36, 36, 36)" } : { color: "#ffffff" }}
+        style={sobre ? { color: "gray" } : { color: "#ffffff" }}
       >
         Sobre
       </NavLink>
@@ -42,7 +42,7 @@ function Header() {
           setProject(true);
           setQualifications(false);
         }}
-        style={project ? { color: "rgb(36, 36, 36)" } : { color: "#ffffff" }}
+        style={project ? { color: "gray" } : { color: "#ffffff" }}
       >
         Projetos
       </NavLink>
@@ -55,9 +55,7 @@ function Header() {
           setProject(false);
           setQualifications(true);
         }}
-        style={
-          qualifications ? { color: "rgb(36, 36, 36)" } : { color: "#ffffff" }
-        }
+        style={qualifications ? { color: "gray" } : { color: "#ffffff" }}
       >
         Qualificações
       </NavLink>
