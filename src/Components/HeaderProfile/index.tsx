@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import imgProfile from "../../icons/images/img-perfil.png";
-import arrow from "../../icons/arrow-right.svg";
+import arrow from "../../icons/icons/arrow.png";
 import { useNavigate } from "react-router-dom";
 
 type HeaderType = {
@@ -126,7 +126,7 @@ const ContainerDescription = styled.div`
 `;
 
 const Description = styled.p`
-  margin-top: 40px;
+  margin-top: 80px;
   text-align: center;
   color: #ffffff;
   font-size: 20px;
@@ -145,7 +145,7 @@ const Button = styled.button`
   cursor: pointer;
   background-image: url(${arrow});
   background-repeat: no-repeat;
-  background-size: 30px;
+  background-size: 50px;
 `;
 
 export default HeaderProfile;

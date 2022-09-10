@@ -30,7 +30,9 @@ const Container = styled.div`
   height: 200px;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   margin-top: 15px;
   border-radius: 5px;
   padding: 8px;
@@ -41,13 +43,11 @@ const Container = styled.div`
     height: 320px;
     display: flex;
     flex-direction: column;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
   }
 `;
 
 const Title = styled.p`
-  color: #000;
+  color: #ffffff;
   font-size: 20px;
   font-weight: bold;
 `;
@@ -69,7 +69,7 @@ const RowDescription = styled.div`
 
 const Description = styled.p`
   width: 70%;
-  color: #000;
+  color: #ffffff;
   font-size: 16px;
   @media (max-width: 768px) {
     width: 100%;

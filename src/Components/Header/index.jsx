@@ -1,20 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 
 function Header() {
+  const [home, setHome] = useState(false);
+  const [sobre, setSobre] = useState(false);
+  const [project, setProject] = useState(false);
+  const [qualifications, setQualifications] = useState(false);
+
   return (
     <Container>
-      <NavLink to="/" activeStyle>
-        Home
+      <NavLink
+        onClick={() => {
+          setHome(true);
+          setSobre(false);
+          setProject(false);
+          setQualifications(false);
+        }}
+        to="/"
+        style={home ? { color: "rgb(36, 36, 36)" } : { color: "#ffffff" }}
+      >
+        Início
       </NavLink>
-      <NavLink to="/Sobre" activeStyle>
+      <NavLink
+        to="/Sobre"
+        onClick={() => {
+          setHome(false);
+          setSobre(true);
+          setProject(false);
+          setQualifications(false);
+        }}
+        style={sobre ? { color: "rgb(36, 36, 36)" } : { color: "#ffffff" }}
+      >
         Sobre
       </NavLink>
-      <NavLink to="/Projetos" activeStyle>
+      <NavLink
+        to="/Projetos"
+        onClick={() => {
+          setHome(false);
+          setSobre(false);
+          setProject(true);
+          setQualifications(false);
+        }}
+        style={project ? { color: "rgb(36, 36, 36)" } : { color: "#ffffff" }}
+      >
         Projetos
       </NavLink>
-      <NavLink to="/Qualificacoes" activeStyle>
+      <NavLink
+        to="/Qualificacoes"
+        activeStyle
+        onClick={() => {
+          setHome(false);
+          setSobre(false);
+          setProject(false);
+          setQualifications(true);
+        }}
+        style={
+          qualifications ? { color: "rgb(36, 36, 36)" } : { color: "#ffffff" }
+        }
+      >
         Qualificações
       </NavLink>
     </Container>

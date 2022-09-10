@@ -66,8 +66,8 @@ const Img = styled.img`
   }
 
   @media (max-width: 768px) {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
   }
 `;
