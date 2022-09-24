@@ -8,8 +8,7 @@ import typescript from "../../icons/tec/typescript.svg";
 import git from "../../icons/tec/git.svg";
 import nodejs from "../../icons/tec/nodejs.svg";
 import html from "../../icons/tec/html5.svg";
-import dart from "../../icons/tec/dart.svg";
-import flutter from "../../icons/tec/flutter.svg";
+import vue from "../../icons/tec/vue.svg";
 
 function BodyTechnology() {
   return (
@@ -24,8 +23,7 @@ function BodyTechnology() {
         <Img src={git} />
         <Img src={nodejs} />
         <Img src={sass} />
-        <Img src={dart} />
-        <Img src={flutter} />
+        <Img src={vue} />
       </Row>
     </Container>
   );
