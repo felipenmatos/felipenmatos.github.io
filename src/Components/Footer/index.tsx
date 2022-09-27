@@ -11,7 +11,7 @@ function Footer() {
         <IconLinkedIn href="https://www.linkedin.com/in/felipe-nonato-604577113/" />
         <Icon href="https://github.com/felipenmatos" />
       </RowIcons>
-      <Contato>(75) 99921-8852</Contato>
+      <Contato>(75) 98241-0325</Contato>
       <Contato>felipenfrontend@gmail.com</Contato>
     </Container>
   );
