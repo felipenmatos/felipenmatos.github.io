@@ -74,7 +74,7 @@ const Button = styled.button`
   width: 150px;
   height: 40px;
   margin-top: 30px;
-  background-color: #b10044;
+  background: #e3386a;
   color: #fff;
   border: 0px;
   border-radius: 2px;

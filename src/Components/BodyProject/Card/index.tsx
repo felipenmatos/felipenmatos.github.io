@@ -85,7 +85,7 @@ const Button = styled.a`
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: #b10044;
+  background: #e3386a;
   color: #fff;
   border: 0px;
   border-radius: 2px;

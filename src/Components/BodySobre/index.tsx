@@ -31,7 +31,7 @@ function BodySobre() {
 const Container = styled.div`
   width: 50%;
   height: 500px;
-  margin-top: 30px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
 `;
@@ -76,7 +76,7 @@ const Button = styled.button`
   width: 151px;
   height: 46px;
   margin-top: 220px;
-  background: #242424;
+  background: #e3386a;
   border-radius: 10px;
   font-style: italic;
   font-weight: 400;

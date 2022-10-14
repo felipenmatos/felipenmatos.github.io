@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import HeaderPage from "../Components/Header/Header";
-import HeaderProfile from "../Components/HeaderProfile";
-import Title from "../Components/BodyProject/Title";
 import BodyTechnology from "../Components/BodyTechnology";
+import background from "../../src/icons/Background.jpg";
+import backgroundMobile from "../../src/icons/Background-Mobile.jpg";
 import Certificado1 from "../icons/certificados/Certificado1.jpg";
 import Certificado2 from "../icons/certificados/Certificado2.jpg";
 import Certificado3 from "../icons/certificados/Certificado3.jpg";
@@ -11,6 +11,7 @@ import Certificado4 from "../icons/certificados/Certificado4.jpg";
 import Certificado5 from "../icons/certificados/Certificado5.jpg";
 import Certificado6 from "../icons/certificados/Certificado6.jpg";
 import Certificado7 from "../icons/certificados/Certificado7.jpg";
+import Certificado8 from "../icons/certificados/Certificado8.jpg";
 import close from "../icons/icons/close.png";
 
 const Qualificacoes = () => {
@@ -21,126 +22,146 @@ const Qualificacoes = () => {
   const [certificado5, setCertificado5]: any = useState(false);
   const [certificado6, setCertificado6]: any = useState(false);
   const [certificado7, setCertificado7]: any = useState(false);
+  const [certificado8, setCertificado8]: any = useState(false);
 
   return (
     <Container>
-      <HeaderPage />
-      <HeaderProfile />
-      <Title title="Minhas licenças e certificados" />
-      <Row>
-        <Img src={Certificado1} onClick={() => setCertificado1(true)} />
-        <Img src={Certificado2} onClick={() => setCertificado2(true)} />
-        <Img src={Certificado3} onClick={() => setCertificado3(true)} />
-        <Img src={Certificado4} onClick={() => setCertificado4(true)} />
-      </Row>
-      <RowBottom>
-        <Img src={Certificado5} onClick={() => setCertificado5(true)} />
-        <Img src={Certificado6} onClick={() => setCertificado6(true)} />
-        <Img src={Certificado7} onClick={() => setCertificado7(true)} />
-      </RowBottom>
-      <BodyTechnology />
-      <FooterPage>
-        <Text>c 2022 . built with care. by Felipe Nonato </Text>
-      </FooterPage>
-      {certificado1 && (
-        <Paper>
-          <Close src={close} onClick={() => setCertificado1(false)} />
-          <Modal src={Certificado1} />
-        </Paper>
-      )}
-      {certificado2 && (
-        <Paper>
-          <Close src={close} onClick={() => setCertificado2(false)} />
-          <Modal src={Certificado2} />
-        </Paper>
-      )}
-      {certificado3 && (
-        <Paper>
-          <Close src={close} onClick={() => setCertificado3(false)} />
-          <Modal src={Certificado3} />
-        </Paper>
-      )}
-      {certificado4 && (
-        <Paper>
-          <Close src={close} onClick={() => setCertificado4(false)} />
-          <Modal src={Certificado4} />
-        </Paper>
-      )}
-      {certificado5 && (
-        <Paper>
-          <Close src={close} onClick={() => setCertificado5(false)} />
-          <Modal src={Certificado5} />
-        </Paper>
-      )}
-      {certificado6 && (
-        <Paper>
-          <Close src={close} onClick={() => setCertificado6(false)} />
-          <Modal src={Certificado6} />
-        </Paper>
-      )}
-      {certificado7 && (
-        <Paper>
-          <Close src={close} onClick={() => setCertificado7(false)} />
-          <Modal src={Certificado7} />
-        </Paper>
-      )}
+      <ContainerBody>
+        <HeaderPage />
+        <Title>Qualificações</Title>
+        <ContainerCertificados>
+          <Img src={Certificado1} onClick={() => setCertificado1(true)} />
+          <Img src={Certificado2} onClick={() => setCertificado2(true)} />
+          <Img src={Certificado3} onClick={() => setCertificado3(true)} />
+          <Img src={Certificado4} onClick={() => setCertificado4(true)} />
+          <Img src={Certificado5} onClick={() => setCertificado5(true)} />
+          <Img src={Certificado6} onClick={() => setCertificado6(true)} />
+          <Img src={Certificado7} onClick={() => setCertificado7(true)} />
+          <Img src={Certificado8} onClick={() => setCertificado8(true)} />
+        </ContainerCertificados>
+        <BodyTechnology />
+        {certificado1 && (
+          <Paper>
+            <Close src={close} onClick={() => setCertificado1(false)} />
+            <Modal src={Certificado1} />
+          </Paper>
+        )}
+        {certificado2 && (
+          <Paper>
+            <Close src={close} onClick={() => setCertificado2(false)} />
+            <Modal src={Certificado2} />
+          </Paper>
+        )}
+        {certificado3 && (
+          <Paper>
+            <Close src={close} onClick={() => setCertificado3(false)} />
+            <Modal src={Certificado3} />
+          </Paper>
+        )}
+        {certificado4 && (
+          <Paper>
+            <Close src={close} onClick={() => setCertificado4(false)} />
+            <Modal src={Certificado4} />
+          </Paper>
+        )}
+        {certificado5 && (
+          <Paper>
+            <Close src={close} onClick={() => setCertificado5(false)} />
+            <Modal src={Certificado5} />
+          </Paper>
+        )}
+        {certificado6 && (
+          <Paper>
+            <Close src={close} onClick={() => setCertificado6(false)} />
+            <Modal src={Certificado6} />
+          </Paper>
+        )}
+        {certificado7 && (
+          <Paper>
+            <Close src={close} onClick={() => setCertificado7(false)} />
+            <Modal src={Certificado7} />
+          </Paper>
+        )}
+        {certificado8 && (
+          <Paper>
+            <Close src={close} onClick={() => setCertificado8(false)} />
+            <Modal src={Certificado8} />
+          </Paper>
+        )}
+      </ContainerBody>
     </Container>
   );
 };
 
 const Container = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: rgb(45, 0, 108);
-  background: linear-gradient(
-    90deg,
-    rgba(45, 0, 108, 1) 0%,
-    rgba(121, 9, 117, 1) 32%,
-    rgba(131, 0, 255, 1) 100%
-  );
-  background-size: 100%;
+  background-image: url(${background});
+  background-size: 100% 100%;
+  backgound-repeat: no-repeat;
   @media (max-width: 768px) {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    background-image: url(${backgroundMobile});
+    background-size: 100% 100%;
+    backgound-repeat: no-repeat;
   }
 `;
 
-const FooterPage = styled.div`
-  width: 100%;
-  height: 100px;
+const ContainerBody = styled.div`
+  width: 50%;
+  height: 100vh;
+  margin-left: 50%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
 `;
 
-const Text = styled.p`
-  color: #ffffff;
-  font-size: 12px;
-  font-family: "Kanit", sans-serif;
+const Title = styled.p`
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #7742e7;
 `;
 
-const Row = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-`;
+const ContainerCertificados = styled.div`
+  width: 480px;
+  height: 280px;
+  margin-top: -10px;
+  margin-left: 20px;
+  background: #7742e7;
+  border-radius: 10px;
 
-const RowBottom = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 215px);
+  grid-gap: 15px;
+  padding: 20px;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  ::-webkit-scrollbar {
+    width: 22px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #7742e7;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 3px solid #7742e7;
+  }
 `;
 
 const Img = styled.img`

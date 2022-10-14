@@ -15,16 +15,17 @@ function Card({ photo, link }: Photo) {
         <Circle />
       </Header>
       <PhotoProfile src={photo} />
-      <Button href={link}>Acessar Repositório</Button>
+      <Button href={link}>Acessar</Button>
     </Container>
   );
 }
 
 const Container = styled.div`
-  width: 310px;
-  height: 330px;
+  width: 210px;
+  height: 260px;
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
   align-items: center;
   background-color: #ffffff;
   border-radius: 5px;
@@ -73,7 +74,7 @@ const Button = styled.a`
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-color: #b10044;
+  background: #e3386a;
   color: #fff;
   border: 0px;
   border-radius: 2px;

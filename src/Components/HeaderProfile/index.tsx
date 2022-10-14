@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import imgProfile from "../../icons/images/img-perfil.png";
-import arrow from "../../icons/icons/arrow.png";
 import { useNavigate } from "react-router-dom";
 
 function HeaderProfile() {
@@ -76,7 +74,7 @@ const Button = styled.button`
   width: 151px;
   height: 46px;
 
-  background: #242424;
+  background: #e3386a;
   border-radius: 10px;
   font-style: italic;
   font-weight: 400;

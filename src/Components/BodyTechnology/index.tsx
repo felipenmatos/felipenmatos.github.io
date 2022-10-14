@@ -9,46 +9,33 @@ import git from "../../icons/tec/git.svg";
 import nodejs from "../../icons/tec/nodejs.svg";
 import html from "../../icons/tec/html5.svg";
 import vue from "../../icons/tec/vue.svg";
+import next from "../../icons/tec/nextjs.svg";
 
 function BodyTechnology() {
   return (
     <Container>
-      <Title>Tecnologias</Title>
-      <Row>
-        <Img src={imgJavascript} />
-        <Img src={imgReact} />
-        <Img src={html} />
-        <Img src={css} />
-        <Img src={typescript} />
-        <Img src={git} />
-        <Img src={nodejs} />
-        <Img src={sass} />
-        <Img src={vue} />
-      </Row>
+      <Img src={imgJavascript} />
+      <Img src={imgReact} />
+      <Img src={html} />
+      <Img src={css} />
+      <Img src={typescript} />
+      <Img src={git} />
+      <Img src={nodejs} />
+      <Img src={sass} />
+      <Img src={vue} />
+      <Img src={next} />
     </Container>
   );
 }
 
 const Container = styled.div`
   width: 100%;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
+  height: 60px;
+  display: grid;
+  grid-template-columns: repeat(8, 55px);
+  grid-gap: 14px;
   align-items: center;
-`;
-
-const Title = styled.h1`
-  font-family: "Kanit", sans-serif;
-  font-weight: 400;
-  font-size: 70px;
-  color: #ffffff;
-`;
-
-const Row = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
 `;
 
 const Img = styled.img`
