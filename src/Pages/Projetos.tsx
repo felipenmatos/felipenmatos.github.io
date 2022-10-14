@@ -3,6 +3,13 @@ import styled from "styled-components";
 import background from "../../src/icons/Background.jpg";
 import backgroundMobile from "../../src/icons/Background-Mobile.jpg";
 import sistema1 from "../icons/images/Home.jpg";
+import sistema2 from "../icons/images/Project4.png";
+import sistema3 from "../icons/images/Project5.png";
+import sistema4 from "../icons/images/projeto.jpg";
+import sistema7 from "../icons/images/projeto7.jpg";
+import sistema5 from "../icons/images/projeto8.jpg";
+import sistema6 from "../icons/images/projeto9.jpg";
+import sistema8 from "../icons/images/HomeDestination.jpg";
 import HeaderPage from "../Components/Header/Header";
 import Card from "../Components/Card";
 import { useNavigate } from "react-router-dom";
@@ -21,11 +28,28 @@ const Projetos = () => {
         <Title>Projetos</Title>
         <ContainerProjects>
           <Card photo={sistema1} link="https://list-english-app.netlify.app/" />
-          <Card photo={sistema1} link="https://list-english-app.netlify.app/" />
-          <Card photo={sistema1} link="https://list-english-app.netlify.app/" />
-          <Card photo={sistema1} link="https://list-english-app.netlify.app/" />
-          <Card photo={sistema1} link="https://list-english-app.netlify.app/" />
-          <Card photo={sistema1} link="https://list-english-app.netlify.app/" />
+          <Card
+            photo={sistema7}
+            link="https://gerenciadordetarefasfn.netlify.app/"
+          />
+          <Card photo={sistema2} link="https://clickbeard.netlify.app/" />
+          <Card photo={sistema3} link="https://sitespace.netlify.app/" />
+          <Card
+            photo={sistema4}
+            link="https://animaisfantasticossite.netlify.app/"
+          />
+          <Card
+            photo={sistema5}
+            link="https://github.com/felipenmatos/burger-vue"
+          />
+          <Card
+            photo={sistema6}
+            link="https://github.com/felipenmatos/internet_plans"
+          />
+          <Card
+            photo={sistema8}
+            link="https://github.com/felipenmatos/destination_search"
+          />
         </ContainerProjects>
         <Button onClick={() => click()}>QUALIFICAÇÕES</Button>
       </ContainerBody>
