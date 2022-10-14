@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 
-function Header() {
+function HeaderPage() {
   const [home, setHome] = useState(false);
   const [sobre, setSobre] = useState(false);
   const [project, setProject] = useState(false);
@@ -20,7 +20,7 @@ function Header() {
         to="/"
         style={home ? { color: "gray" } : { color: "#ffffff" }}
       >
-        Início
+        <Text>Início</Text>
       </NavLink>
       <NavLink
         to="/Sobre"
@@ -32,7 +32,7 @@ function Header() {
         }}
         style={sobre ? { color: "gray" } : { color: "#ffffff" }}
       >
-        Sobre
+        <Text>Sobre</Text>
       </NavLink>
       <NavLink
         to="/Projetos"
@@ -44,7 +44,7 @@ function Header() {
         }}
         style={project ? { color: "gray" } : { color: "#ffffff" }}
       >
-        Projetos
+        <Text>Projetos</Text>
       </NavLink>
       <NavLink
         to="/Qualificacoes"
@@ -57,7 +57,7 @@ function Header() {
         }}
         style={qualifications ? { color: "gray" } : { color: "#ffffff" }}
       >
-        Qualificações
+        <Text>Qualificações</Text>
       </NavLink>
     </Container>
   );
@@ -73,11 +73,8 @@ const Container = styled.div`
 `;
 
 const NavLink = styled(Link)`
-  font-family: "Kanit", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  margin-left: 30px;
-  color: #ffffff;
+  margin-left: 10px;
+  color: red;
   cursor: pointer;
   text-decoration: none;
 
@@ -86,9 +83,29 @@ const NavLink = styled(Link)`
     font-weight: 400;
     font-size: 16px;
     margin-left: 12px;
-    color: #ffffff;
+    color: #4a4a4a;
     cursor: pointer;
   }
 `;
 
-export default Header;
+const Text = styled.p`
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 15px;
+  margin-left: 30px;
+  color: #4a4a4a;
+  cursor: pointer;
+  text-decoration: none;
+
+  @media (max-width: 768px) {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 12px;
+    color: #4a4a4a;
+    cursor: pointer;
+  }
+`;
+
+export default HeaderPage;

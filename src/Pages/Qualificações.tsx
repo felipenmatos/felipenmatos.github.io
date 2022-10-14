@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Header from "../Components/Header";
+import HeaderPage from "../Components/Header/Header";
 import HeaderProfile from "../Components/HeaderProfile";
-import Footer from "../Components/Footer";
 import Title from "../Components/BodyProject/Title";
 import BodyTechnology from "../Components/BodyTechnology";
 import Certificado1 from "../icons/certificados/Certificado1.jpg";
@@ -25,12 +24,8 @@ const Qualificacoes = () => {
 
   return (
     <Container>
-      <Header />
-      <HeaderProfile
-        title="Qualificações"
-        description="Ao longo de minha trajetória até aqui, venho adquirindo aconhecimentos voltado para desenvolvimento FrontEnd com a finalidade de aprimorar e expandir cada vez mais minhas habilidades."
-        label="Veja minhas qualificações"
-      />
+      <HeaderPage />
+      <HeaderProfile />
       <Title title="Minhas licenças e certificados" />
       <Row>
         <Img src={Certificado1} onClick={() => setCertificado1(true)} />
@@ -44,7 +39,6 @@ const Qualificacoes = () => {
         <Img src={Certificado7} onClick={() => setCertificado7(true)} />
       </RowBottom>
       <BodyTechnology />
-      <Footer />
       <FooterPage>
         <Text>c 2022 . built with care. by Felipe Nonato </Text>
       </FooterPage>

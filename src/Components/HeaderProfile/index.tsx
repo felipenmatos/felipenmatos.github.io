@@ -4,13 +4,7 @@ import imgProfile from "../../icons/images/img-perfil.png";
 import arrow from "../../icons/icons/arrow.png";
 import { useNavigate } from "react-router-dom";
 
-type HeaderType = {
-  title: string;
-  description: string;
-  label: string;
-};
-
-function HeaderProfile({ title, description, label }: HeaderType) {
+function HeaderProfile() {
   const navigate = useNavigate();
 
   function click() {
@@ -19,133 +13,79 @@ function HeaderProfile({ title, description, label }: HeaderType) {
 
   return (
     <Container>
-      <ContainerCard>
-        <div>
-          <CardPhoto src={imgProfile} />
-          <TitlePage>{title}</TitlePage>
-        </div>
-        <ContainerDescription>
-          <Description>{description}</Description>
-          <Label>{label}</Label>
-          <Button onClick={() => click()} />
-        </ContainerDescription>
-      </ContainerCard>
+      <Name>FELIPE</Name>
+      <Surname>NONATO</Surname>
+      <Description>
+        Desenvolvo sites e aplicativos a mais de 2 anos. Posso te ajudar a criar
+        o melhor app da sua empresa. Para mais informações, clique no botão logo
+        abaixo.
+      </Description>
+      <Button onClick={() => click()}>SABER MAIS</Button>
     </Container>
   );
 }
 
 const Container = styled.div`
-  width: 100%;
+  width: 50%;
   height: 500px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  background-color: transparent;
 `;
 
-const ContainerCard = styled.div`
-  width: 100%;
-  height: 80%;
-  font-family: "Kanit", sans-serif;
-  background-color: rgb(36, 36, 36);
+const Name = styled.p`
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #7742e7;
+`;
+
+const Surname = styled.p`
+  margin-top: -40px;
+  width: 213px;
+  height: 60px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
   display: flex;
-  flex-direction: row;
-  position: relative;
-
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 1000px;
-  }
-`;
-
-const CardPhoto = styled.img`
-  display: flex;
-  position: relative;
-  width: 450px;
-  height: 450px;
-  left: 20%;
-  top: 10%;
-  cursor: pointer;
-  transition: all 0.5s;
-
-  :hover {
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
-    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
-  }
-
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    left: 0%;
-    top: 5%;
-    width: 300px;
-    height: 300px;
-  }
-`;
-
-const TitlePage = styled.h1`
-  position: relative;
-  top: -26%;
-  left: 75%;
-  font-size: 70px;
-  color: #ffffff;
-  animation: go-back 1s;
-
-  @keyframes go-back {
-    from {
-      transform: translateX(100px);
-    }
-    to {
-      transform: translateX(0);
-    }
-  }
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    margin-left: -200px;
-    margin-bottom: 100px;
-    font-size: 50px;
-  }
-`;
-
-const ContainerDescription = styled.div`
-  width: 440px;
-  margin-left: 180px;
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-
-  @media (max-width: 768px) {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    margin-top: -180px;
-    margin-left: 0px;
-  }
+  text-align: center;
+  color: #ffffff;
+  background: #7742e7;
+  border-radius: 10px;
 `;
 
 const Description = styled.p`
-  margin-top: 80px;
-  text-align: center;
-  color: #ffffff;
-  font-size: 20px;
-`;
+  margin-top: -10px;
+  width: 345px;
+  height: 91px;
 
-const Label = styled.p`
-  color: #8a2be2;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 19px;
+
+  color: #4a4a4a;
 `;
 
 const Button = styled.button`
-  width: 60px;
-  height: 60px;
-  margin-left: 20px;
-  background-color: transparent;
+  width: 151px;
+  height: 46px;
+
+  background: #242424;
+  border-radius: 10px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
   border: none;
   cursor: pointer;
-  background-image: url(${arrow});
-  background-repeat: no-repeat;
-  background-size: 50px;
 `;
 
 export default HeaderProfile;
