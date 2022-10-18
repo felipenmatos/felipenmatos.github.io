@@ -66,6 +66,7 @@ const Container = styled.div`
   background-image: url(${background});
   background-size: 100% 100%;
   backgound-repeat: no-repeat;
+
   @media (max-width: 768px) {
     width: 100%;
     height: 100vh;
@@ -80,9 +81,9 @@ const Container = styled.div`
 `;
 
 const ContainerBody = styled.div`
-  width: 50%;
+  width: 60%;
   height: 100vh;
-  margin-left: 50%;
+  margin-left: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,11 +91,22 @@ const ContainerBody = styled.div`
 
 const Title = styled.h1`
   margin-top: 20px;
+  margin-left: -35%;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
   color: #7742e7;
+  animation: go-back 2s;
+
+  @keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 `;
 
 const ContainerProjects = styled.div`
@@ -132,7 +144,7 @@ const Button = styled.button`
   width: 151px;
   height: 46px;
   margin-top: 20px;
-  margin-left: -50%;
+  margin-left: -40%;
   background: #e3386a;
   border-radius: 10px;
   font-style: italic;
@@ -143,6 +155,22 @@ const Button = styled.button`
   color: #ffffff;
   border: none;
   cursor: pointer;
+
+  :hover {
+    width: 151px;
+    height: 46px;
+
+    background: #e51b56;
+    border-radius: 10px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
 `;
 
 export default Projetos;

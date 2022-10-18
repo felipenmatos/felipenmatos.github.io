@@ -1,16 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import HeaderPage from "../Components/Header/Header";
 import background from "../../src/icons/Background.jpg";
 import backgroundMobile from "../../src/icons/Background-Mobile.jpg";
-import HeaderPage from "../Components/Header/Header";
-import HeaderProfile from "../Components/HeaderProfile";
+import Contact from "../Components/BodyContact/contact";
 
-const Home = () => {
+const Contato = () => {
   return (
     <Container>
       <ContainerBody>
         <HeaderPage />
-        <HeaderProfile />
+        <Contact />
       </ContainerBody>
     </Container>
   );
@@ -47,4 +47,25 @@ const ContainerBody = styled.div`
   align-items: center;
 `;
 
-export default Home;
+const Title = styled.p`
+  margin-top: 20px;
+  margin-left: -25%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #7742e7;
+
+  animation: go-back 2s;
+
+  @keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+`;
+
+export default Contato;

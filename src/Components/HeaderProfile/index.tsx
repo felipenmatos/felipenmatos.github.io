@@ -37,6 +37,16 @@ const Name = styled.p`
   font-size: 48px;
   line-height: 58px;
   color: #7742e7;
+  animation: go-back 2s;
+
+  @keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 `;
 
 const Surname = styled.p`
@@ -54,6 +64,17 @@ const Surname = styled.p`
   color: #ffffff;
   background: #7742e7;
   border-radius: 10px;
+
+  animation: go-back 1s;
+
+  @keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 `;
 
 const Description = styled.p`
@@ -84,6 +105,22 @@ const Button = styled.button`
   color: #ffffff;
   border: none;
   cursor: pointer;
+
+  :hover {
+    width: 151px;
+    height: 46px;
+
+    background: #e51b56;
+    border-radius: 10px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
 `;
 
 export default HeaderProfile;

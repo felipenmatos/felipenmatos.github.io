@@ -29,18 +29,20 @@ function BodyTechnology() {
 }
 
 const Container = styled.div`
-  width: 100%;
+  width: 80%;
   height: 60px;
   display: grid;
-  grid-template-columns: repeat(8, 55px);
+  margin-top: 40px;
+  margin-left: 10%;
+  grid-template-columns: repeat(10, 55px);
   grid-gap: 14px;
   align-items: center;
   justify-content: center;
 `;
 
 const Img = styled.img`
-  width: 60px;
-  height: 60px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   transition: all 0.5s;
   border: 5px solid transparent;

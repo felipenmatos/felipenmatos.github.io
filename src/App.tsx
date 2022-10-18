@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Contato from "./Pages/Contato";
 import Home from "./Pages/Home";
 import Projetos from "./Pages/Projetos";
 import Qualificacoes from "./Pages/Qualificações";
@@ -18,6 +19,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/Qualificacoes" element={<Qualificacoes />} />
+      </Routes>
+      <Routes>
+        <Route path="/Contato" element={<Contato />} />
       </Routes>
     </Router>
   );

@@ -39,9 +39,9 @@ const Container = styled.div`
 `;
 
 const ContainerBody = styled.div`
-  width: 50%;
+  width: 60%;
   height: 100vh;
-  margin-left: 50%;
+  margin-left: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;

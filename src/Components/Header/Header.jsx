@@ -59,6 +59,19 @@ function HeaderPage() {
       >
         <Text>Qualificações</Text>
       </NavLink>
+      <NavLink
+        to="/Contato"
+        activeStyle
+        onClick={() => {
+          setHome(false);
+          setSobre(false);
+          setProject(false);
+          setQualifications(true);
+        }}
+        style={qualifications ? { color: "gray" } : { color: "#ffffff" }}
+      >
+        <Text>Contato</Text>
+      </NavLink>
     </Container>
   );
 }

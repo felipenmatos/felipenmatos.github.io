@@ -116,9 +116,9 @@ const Container = styled.div`
 `;
 
 const ContainerBody = styled.div`
-  width: 50%;
+  width: 60%;
   height: 100vh;
-  margin-left: 50%;
+  margin-left: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,11 +126,23 @@ const ContainerBody = styled.div`
 
 const Title = styled.p`
   margin-top: 20px;
+  margin-left: -25%;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
   color: #7742e7;
+
+  animation: go-back 2s;
+
+  @keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 `;
 
 const ContainerCertificados = styled.div`
