@@ -41,7 +41,7 @@ const Photo = styled.img`
 const Subtitle = styled.p`
   font-family: "Roboto";
 
-  font-weight: 400;
+  font-weight: 700;
   font-size: 20px;
   line-height: 19px;
 
@@ -49,6 +49,7 @@ const Subtitle = styled.p`
 `;
 
 const RowIcons = styled.div`
+  margin-top: 10px;
   width: 200px;
   display: flex;
   flex-direction: row;
@@ -62,8 +63,9 @@ const Img = styled.img`
 `;
 
 const CellNumber = styled.p`
+  margin-top: 30px;
+  margin-bottom: -10px;
   font-family: "Roboto";
-
   font-weight: 400;
   font-size: 20px;
   line-height: 19px;
