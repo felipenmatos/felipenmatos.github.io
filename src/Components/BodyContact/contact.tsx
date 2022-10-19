@@ -5,7 +5,7 @@ import whatsapp from "../../icons/whatsapp.png";
 import linkedin from "../../icons/linkedin.png";
 import github from "../../icons/github-sign.png";
 import instagram from "../../icons/instagram.png";
-import behance from "../../icons/instagram.png";
+import behance from "../../icons/behance.png";
 
 function Contact() {
   return (
@@ -36,6 +36,14 @@ const Photo = styled.img`
   width: 200px;
   border-radius: 100%;
   cursor: pointer;
+
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+
+  :hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 `;
 
 const Subtitle = styled.p`

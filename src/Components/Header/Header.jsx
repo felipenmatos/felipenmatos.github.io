@@ -83,6 +83,15 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 60px;
+    margin-left: -40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const NavLink = styled(Link)`
@@ -115,8 +124,8 @@ const Text = styled.p`
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    margin-left: 12px;
-    color: #4a4a4a;
+    margin-left: 10px;
+    color: #ffffff;
     cursor: pointer;
   }
 `;

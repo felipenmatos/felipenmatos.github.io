@@ -29,6 +29,14 @@ const Container = styled.div`
   margin-top: 40px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -40%;
+  }
 `;
 
 const Name = styled.p`
@@ -36,7 +44,7 @@ const Name = styled.p`
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
-  color: #7742e7;
+  color: #0d00a5;
   animation: go-back 2s;
 
   @keyframes go-back {
@@ -46,6 +54,16 @@ const Name = styled.p`
     to {
       transform: translateX(0);
     }
+  }
+
+  @media (max-width: 768px) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    color: #ffffff;
+    animation: go-back 2s;
+    margin-left: 15%;
   }
 `;
 
@@ -62,7 +80,7 @@ const Surname = styled.p`
   align-items: center;
   text-align: center;
   color: #ffffff;
-  background: #7742e7;
+  background: #0d00a5;
   border-radius: 10px;
 
   animation: go-back 1s;
@@ -75,6 +93,26 @@ const Surname = styled.p`
       transform: translateX(0);
     }
   }
+
+  @media (max-width: 768px) {
+    margin-top: -40px;
+    margin-left: 15%;
+    width: 213px;
+    height: 60px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #0d00a5;
+    background: #ffffff;
+    border-radius: 10px;
+
+    animation: go-back 1s;
+  }
 `;
 
 const Description = styled.p`
@@ -83,12 +121,25 @@ const Description = styled.p`
   height: 91px;
 
   font-family: "Inter";
-  font-style: italic;
   font-weight: 400;
   font-size: 20px;
   line-height: 19px;
 
   color: #4a4a4a;
+
+  @media (max-width: 768px) {
+    margin-top: -10px;
+    margin-left: 15%;
+    width: 345px;
+    height: 91px;
+
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+
+    color: #ffffff;
+  }
 `;
 
 const Button = styled.button`
@@ -109,6 +160,23 @@ const Button = styled.button`
   :hover {
     width: 151px;
     height: 46px;
+
+    background: #e51b56;
+    border-radius: 10px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    width: 151px;
+    height: 46px;
+    margin-left: 15%;
 
     background: #e51b56;
     border-radius: 10px;

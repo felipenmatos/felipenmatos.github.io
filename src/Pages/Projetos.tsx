@@ -96,7 +96,7 @@ const Title = styled.h1`
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
-  color: #7742e7;
+  color: #0d00a5;
   animation: go-back 2s;
 
   @keyframes go-back {
@@ -114,7 +114,7 @@ const ContainerProjects = styled.div`
   height: 360px;
   margin-top: -10px;
   margin-left: 20px;
-  background: #7742e7;
+  background: #0d00a5;
   border-radius: 10px;
 
   display: grid;
@@ -129,14 +129,15 @@ const ContainerProjects = styled.div`
     width: 22px;
   }
   ::-webkit-scrollbar-track {
-    background: #7742e7;
+    background: #0d00a5;
     border-radius: 10px;
   }
   ::-webkit-scrollbar-thumb {
     height: 60px;
     background-color: #ffffff;
     border-radius: 20px;
-    border: 3px solid #7742e7;
+    border: 3px solid #0d00a5;
+    cursor: pointer;
   }
 `;
 

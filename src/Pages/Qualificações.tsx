@@ -126,12 +126,12 @@ const ContainerBody = styled.div`
 
 const Title = styled.p`
   margin-top: 20px;
-  margin-left: -25%;
+  margin-left: -40%;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
-  color: #7742e7;
+  color: #0d00a5;
 
   animation: go-back 2s;
 
@@ -146,39 +146,22 @@ const Title = styled.p`
 `;
 
 const ContainerCertificados = styled.div`
-  width: 480px;
+  width: 80%;
   height: 280px;
-  margin-top: -10px;
+  margin-top: -20px;
   margin-left: 20px;
-  background: #7742e7;
+  background: #ffffff;
   border-radius: 10px;
 
   display: grid;
-  grid-template-columns: repeat(2, 215px);
-  grid-gap: 15px;
+  grid-template-columns: repeat(4, 170px);
+  grid-gap: 5px;
   padding: 20px;
-
-  overflow-x: hidden;
-  overflow-y: scroll;
-  scrollbar-width: thin;
-  ::-webkit-scrollbar {
-    width: 22px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #7742e7;
-    border-radius: 10px;
-  }
-  ::-webkit-scrollbar-thumb {
-    height: 60px;
-    background-color: #ffffff;
-    border-radius: 20px;
-    border: 3px solid #7742e7;
-  }
 `;
 
 const Img = styled.img`
-  width: 220px;
-  height: 150px;
+  width: 160px;
+  height: 120px;
   cursor: pointer;
 
   @media (max-width: 768px) {
