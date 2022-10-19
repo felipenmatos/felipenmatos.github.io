@@ -146,25 +146,24 @@ const Button = styled.button`
   height: 46px;
   margin-top: 20px;
   margin-left: -40%;
-  background: #e3386a;
+  background: #ffffff;
   border-radius: 10px;
-  font-style: italic;
-  font-weight: 400;
+  border: 1px solid #0d00a5;
+  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
+  transition: background 1s;
 
-  color: #ffffff;
-  border: none;
+  color: #0d00a5;
   cursor: pointer;
 
   :hover {
     width: 151px;
     height: 46px;
 
-    background: #e51b56;
+    background: #0d00a5;
     border-radius: 10px;
-    font-style: italic;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 16px;
     line-height: 19px;
 
