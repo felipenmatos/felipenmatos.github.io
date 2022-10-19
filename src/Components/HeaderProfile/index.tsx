@@ -139,7 +139,7 @@ const Description = styled.p`
 
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 19px;
 
     color: #ffffff;

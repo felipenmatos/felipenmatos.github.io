@@ -14,14 +14,13 @@ function BodySobre() {
       <Title>Sobre Felipe</Title>
       <Text>
         Me chamo Felipe, mas pode me chamar de Felps (apelido de infância). Sou
-        baiano, nascido em Nazaré, município do interior da Bahia. Tenho
-        formação de especialização em Desenvolvimento de Softwares, também
-        alguns cursos que complementam e consolidam novos conhecimentos. Costumo
-        ser constante e criativo no que costumo fazer. Meus principais hobbies
-        são: Desenhar, Assistir Filmes e Series, Jogar, Correr e Desenvolver
-        Design. Sou pai do Théo e marido da Natália. Tenho uma cadelinha chamada
-        Sol. Minha família é minha principal motivação e inspiração, eles são
-        minha base.
+        baiano, tenho formação de especialização em Desenvolvimento de
+        Softwares, também alguns cursos que complementam e consolidam novos
+        conhecimentos. Costumo ser constante e criativo no que costumo fazer.
+        Meus principais hobbies são: Assistir filmes e series, jogar, correr e
+        desenvolver designs. Sou pai do Théo e marido da Natália. Tenho uma
+        cadelinha chamada Sol. Minha família é minha principal motivação e
+        inspiração, eles são minha base.
       </Text>
       <Button onClick={() => click()}>PROJETOS</Button>
     </Container>
@@ -40,7 +39,7 @@ const Container = styled.div`
     margin-top: -20px;
     margin-left: -40%;
     width: 100%;
-    height: 500px;
+    height: 550px;
     display: flex;
     flex-direction: column;
   }
@@ -96,9 +95,9 @@ const Text = styled.p`
     width: 345px;
     height: 91px;
 
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 19px;
 
     color: #ffffff;
@@ -108,7 +107,7 @@ const Text = styled.p`
 const Button = styled.button`
   width: 151px;
   height: 46px;
-  margin-top: 280px;
+  margin-top: 230px;
   margin-left: 15%;
   background: #ffffff;
   border-radius: 10px;
@@ -135,6 +134,39 @@ const Button = styled.button`
     color: #ffffff;
     border: none;
     cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    width: 151px;
+    height: 46px;
+    margin-top: 210px;
+    margin-left: 15%;
+    background: #0d00a5;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    transition: background 1s;
+
+    color: #ffffff;
+    cursor: pointer;
+
+    :hover,
+    :focus {
+      width: 151px;
+      height: 46px;
+
+      background: #ffffff;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+
+      color: #0d00a5;
+      border: none;
+      cursor: pointer;
+    }
   }
 `;
 

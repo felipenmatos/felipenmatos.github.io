@@ -25,6 +25,7 @@ const Container = styled.div`
   background-image: url(${background});
   background-size: 100% 100%;
   backgound-repeat: no-repeat;
+
   @media (max-width: 768px) {
     width: 100%;
     height: 100vh;
@@ -52,7 +53,6 @@ const ContainerBody = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: red;
   }
 `;
 

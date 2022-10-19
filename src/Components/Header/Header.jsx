@@ -101,7 +101,6 @@ const Text = styled.p`
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    margin-left: 10px;
     color: #0d00a5;
     cursor: pointer;
 
