@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import styled from "styled-components";
 import HeaderPage from "../Components/Header/Header";
 import background from "../../src/icons/Background.jpg";
@@ -45,27 +44,6 @@ const ContainerBody = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
-
-const Title = styled.p`
-  margin-top: 20px;
-  margin-left: -25%;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
-  color: #7742e7;
-
-  animation: go-back 2s;
-
-  @keyframes go-back {
-    from {
-      transform: translateX(100px);
-    }
-    to {
-      transform: translateX(0);
-    }
-  }
 `;
 
 export default Contato;
