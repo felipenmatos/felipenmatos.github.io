@@ -127,6 +127,7 @@ const ContainerBody = styled.div`
 const Title = styled.p`
   margin-top: 20px;
   margin-left: -40%;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;

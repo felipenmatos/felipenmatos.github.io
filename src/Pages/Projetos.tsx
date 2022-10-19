@@ -90,8 +90,9 @@ const ContainerBody = styled.div`
 `;
 
 const Title = styled.h1`
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: -35%;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -149,6 +150,7 @@ const Button = styled.button`
   background: #ffffff;
   border-radius: 10px;
   border: 1px solid #0d00a5;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;

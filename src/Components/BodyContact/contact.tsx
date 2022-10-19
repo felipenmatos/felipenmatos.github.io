@@ -47,7 +47,8 @@ const Photo = styled.img`
 `;
 
 const Subtitle = styled.p`
-  font-family: "Inter";
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
 
   font-weight: 700;
   font-size: 20px;
@@ -58,7 +59,7 @@ const Subtitle = styled.p`
 
 const RowIcons = styled.div`
   margin-top: 10px;
-  width: 200px;
+  width: 240px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -68,12 +69,19 @@ const Img = styled.img`
   width: 35px;
   height: 35px;
   cursor: pointer;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+
+  :hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 `;
 
 const CellNumber = styled.p`
   margin-top: 30px;
   margin-bottom: -10px;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 19px;
@@ -82,7 +90,7 @@ const CellNumber = styled.p`
 `;
 
 const Email = styled.p`
-  font-family: "Roboto";
+  font-family: "Poppins", sans-serif;
 
   font-weight: 400;
   font-size: 20px;

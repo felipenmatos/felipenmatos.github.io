@@ -31,8 +31,8 @@ function BodySobre() {
 const Container = styled.div`
   width: 50%;
   margin-left: -15%;
-  height: 500px;
-  margin-top: 10px;
+  height: 570px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
 
@@ -48,6 +48,7 @@ const Container = styled.div`
 
 const Title = styled.h1`
   margin-left: 15%;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -66,6 +67,7 @@ const Title = styled.h1`
   }
 
   @media (max-width: 768px) {
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -82,7 +84,7 @@ const Text = styled.p`
   width: 345px;
   height: 91px;
 
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 19px;
@@ -106,11 +108,12 @@ const Text = styled.p`
 const Button = styled.button`
   width: 151px;
   height: 46px;
-  margin-top: 220px;
+  margin-top: 280px;
   margin-left: 15%;
   background: #ffffff;
   border-radius: 10px;
   border: 1px solid #0d00a5;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;

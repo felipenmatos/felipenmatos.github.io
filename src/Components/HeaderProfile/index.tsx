@@ -40,6 +40,7 @@ const Container = styled.div`
 `;
 
 const Name = styled.p`
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -57,6 +58,7 @@ const Name = styled.p`
   }
 
   @media (max-width: 768px) {
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -71,6 +73,7 @@ const Surname = styled.p`
   margin-top: -40px;
   width: 213px;
   height: 60px;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -99,6 +102,7 @@ const Surname = styled.p`
     margin-left: 15%;
     width: 213px;
     height: 60px;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
@@ -120,7 +124,7 @@ const Description = styled.p`
   width: 345px;
   height: 91px;
 
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 19px;
@@ -133,7 +137,7 @@ const Description = styled.p`
     width: 345px;
     height: 91px;
 
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 19px;
@@ -149,6 +153,7 @@ const Button = styled.button`
   background: #ffffff;
   border-radius: 10px;
   border: 1px solid #0d00a5;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -164,6 +169,7 @@ const Button = styled.button`
 
     background: #0d00a5;
     border-radius: 10px;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
@@ -177,17 +183,32 @@ const Button = styled.button`
     width: 151px;
     height: 46px;
     margin-left: 15%;
-
-    background: #e51b56;
+    background: #0d00a5;
     border-radius: 10px;
-    font-style: italic;
-    font-weight: 400;
+    border: 1px solid #ffffff;
+    font-weight: 700;
     font-size: 16px;
     line-height: 19px;
+    transition: background 1s;
 
     color: #ffffff;
-    border: none;
     cursor: pointer;
+
+    :hover,
+    :focus {
+      width: 151px;
+      height: 46px;
+
+      background: #ffffff;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+
+      color: #0d00a5;
+      border: none;
+      cursor: pointer;
+    }
   }
 `;
 
