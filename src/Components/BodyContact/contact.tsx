@@ -13,11 +13,24 @@ function Contact() {
       <Photo src={photoProfile} alt="perfil" />
       <Subtitle>Aqui estão algumas das minhas redes de contato.</Subtitle>
       <RowIcons>
-        <Img src={whatsapp} />
-        <Img src={linkedin} />
-        <Img src={github} />
-        <Img src={instagram} />
-        <Img src={behance} />
+        <Link
+          href="https://wa.me/5575982410325?text=Olá%20Tudo%20bem?%20Tenho%20interesse%20em%20seus%20serviços."
+          target="_blank"
+        >
+          <Img src={whatsapp} />
+        </Link>
+        <Link href="https://www.linkedin.com/in/felipe-nonato/" target="_blank">
+          <Img src={linkedin} />
+        </Link>
+        <Link href="https://github.com/felipenmatos" target="_blank">
+          <Img src={github} />
+        </Link>
+        <Link href="https://www.instagram.com/felipe.frontend/" target="_blank">
+          <Img src={instagram} />
+        </Link>
+        <Link href="https://www.behance.net/felipenonato1" target="_blank">
+          <Img src={behance} />
+        </Link>
       </RowIcons>
       <CellNumber>(75) 9 8241-0325</CellNumber>
       <Email>felipe.frontend@gmail.com</Email>
@@ -64,6 +77,8 @@ const RowIcons = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
 `;
+
+const Link = styled.a``;
 
 const Img = styled.img`
   width: 35px;
