@@ -38,6 +38,14 @@ const Container = styled.div`
   grid-gap: 14px;
   align-items: center;
   justify-content: center;
+  @media (max-width: 768px) {
+    margin-top: -40px;
+    margin-left: -40%;
+    grid-template-columns: repeat(10, 25px);
+    grid-gap: 14px;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const Img = styled.img`

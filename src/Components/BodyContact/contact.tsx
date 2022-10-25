@@ -43,6 +43,10 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 768px) {
+    margin-left: -40%;
+  }
 `;
 
 const Photo = styled.img`
@@ -57,6 +61,20 @@ const Photo = styled.img`
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
   }
+
+  @media (max-width: 768px) {
+    width: 180px;
+    border-radius: 100%;
+    cursor: pointer;
+
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+
+    :hover {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
 `;
 
 const Subtitle = styled.p`
@@ -68,6 +86,13 @@ const Subtitle = styled.p`
   line-height: 19px;
 
   color: #4a4a4a;
+
+  @media (max-width: 768px) {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+  }
 `;
 
 const RowIcons = styled.div`
@@ -97,21 +122,35 @@ const CellNumber = styled.p`
   margin-top: 30px;
   margin-bottom: -10px;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 20px;
   line-height: 19px;
 
   color: #4a4a4a;
+
+  @media (max-width: 768px) {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+  }
 `;
 
 const Email = styled.p`
   font-family: "Poppins", sans-serif;
 
-  font-weight: 400;
+  font-weight: 700;
   font-size: 20px;
   line-height: 19px;
 
   color: #4a4a4a;
+
+  @media (max-width: 768px) {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+  }
 `;
 
 export default Contact;

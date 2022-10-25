@@ -38,10 +38,11 @@ const Container = styled.div`
   }
 
   @media (max-width: 768px) {
+    width: 160px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
   }
 `;
 
@@ -82,6 +83,12 @@ const Button = styled.a`
   font-family: "Kanit", sans-serif;
   font-weight: 400;
   text-decoration: none;
+
+  @media (max-width: 768px) {
+    width: 130px;
+    height: 40px;
+    margin-top: 10px;
+  }
 `;
 
 export default Card;

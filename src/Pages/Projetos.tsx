@@ -161,12 +161,17 @@ const ContainerProjects = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 400px;
+    width: 380px;
     height: 280px;
-    margin-top: -10px;
+    margin-top: -15px;
     margin-left: -45%;
     background: #0d00a5;
     border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    grid-gap: 10px;
+    padding: 20px;
   }
 `;
 
@@ -206,7 +211,7 @@ const Button = styled.button`
     width: 151px;
     height: 46px;
     margin-top: 10px;
-    margin-left: -80%;
+    margin-left: -85%;
 
     border: 1px solid #ffffff;
     background: #0d00a5;

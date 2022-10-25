@@ -122,6 +122,14 @@ const ContainerBody = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Title = styled.p`
@@ -144,6 +152,10 @@ const Title = styled.p`
       transform: translateX(0);
     }
   }
+
+  @media (max-width: 768px) {
+    color: #ffffff;
+  }
 `;
 
 const ContainerCertificados = styled.div`
@@ -158,6 +170,15 @@ const ContainerCertificados = styled.div`
   grid-template-columns: repeat(4, 170px);
   grid-gap: 5px;
   padding: 20px;
+  @media (max-width: 768px) {
+    height: 260px;
+    margin-left: -40%;
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 5px;
+    padding: 10px;
+  }
 `;
 
 const Img = styled.img`
