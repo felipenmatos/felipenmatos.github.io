@@ -4,6 +4,8 @@ import logo from "../icons/Logo.svg";
 import photoHome from "../icons/PhotoHome.png";
 import imgProfile from "../icons/photoBlack.jpg";
 import BodyTechnology from "../Components/BodyTechnology";
+import Contact from "../Components/BodyContact/contact";
+import SimpleSlider from "../Components/Slider/slider";
 
 const Home = () => {
   return (
@@ -107,29 +109,25 @@ const Home = () => {
         </RowProject>
       </BodyProjects>
       <BodyCourses>
-        <Carrousel>
-          <ImgCourse />
-        </Carrousel>
+        <SimpleSlider />
       </BodyCourses>
       <BodyTech>
         <BodyTechnology />
       </BodyTech>
       <Footer>
-        <Title>Entre em contato</Title>
+        <Title>Contato</Title>
         <DescriptionFooter>
           Precisa de um desenvolvedor front-end? Vamos trabalhar juntos!
         </DescriptionFooter>
         <RowFooter>
-          <ImgProfile />
-          <Email>felipenfrontend@gmail.com</Email>
-          <RowButtons>
-            <ButtonFooter />
-            <ButtonFooter />
-            <ButtonFooter />
-            <ButtonFooter />
-            <ButtonFooter />
-          </RowButtons>
+          <ImgProfileFooter src={imgProfile} alt="imgProfile" />
+          <DivEmail>
+            <Email>felipenfrontend@gmail.com</Email>
+          </DivEmail>
         </RowFooter>
+        <RowButtons>
+          <Contact />
+        </RowButtons>
         <TextFooter>by: Felipe Nonato</TextFooter>
       </Footer>
     </Container>
@@ -253,6 +251,10 @@ const ButtonStart = styled.button`
 const ImgBodyHome = styled.img`
   width: 600px;
   height: 422px;
+
+  @media (max-width: 868px) {
+    display: none;
+  }
 `;
 
 const BodyAbout = styled.div`
@@ -377,28 +379,80 @@ const ButtonCard = styled.button`
 `;
 
 const BodyCourses = styled.div`
-  width: center;
+  margin-top: 200px;
+  width: 100%;
   height: 700px;
 `;
 
-const Carrousel = styled.div``;
+const BodyTech = styled.div`
+  width: 100%;
+  height: 200px;
+`;
 
-const ImgCourse = styled.img``;
+const Footer = styled.div`
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #5a5a5a;
+`;
 
-const BodyTech = styled.div``;
+const ImgProfileFooter = styled.img`
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  cursor: pointer;
+`;
 
-const Footer = styled.div``;
+const DescriptionFooter = styled.p`
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+`;
 
-const DescriptionFooter = styled.p``;
+const RowFooter = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 320px;
+`;
 
-const RowFooter = styled.div``;
+const DivEmail = styled.div`
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  height: 40px;
+  border-radius: 10px;
+`;
 
-const Email = styled.p``;
+const Email = styled.p`
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 24px;
+  color: #6a6a6a;
+  cursor: pointer;
+`;
 
 const RowButtons = styled.div``;
 
-const ButtonFooter = styled.button``;
-
-const TextFooter = styled.p``;
+const TextFooter = styled.p`
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000;
+`;
 
 export default Home;
