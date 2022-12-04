@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -11,28 +11,6 @@ import certificado5 from "../../icons/certificados/Certificado5.jpg";
 import certificado6 from "../../icons/certificados/Certificado6.jpg";
 import certificado7 from "../../icons/certificados/Certificado7.jpg";
 import certificado8 from "../../icons/certificados/Certificado8.jpg";
-
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <Circle
-      className={className}
-      style={{ ...style, display: "block", background: "gray" }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <Circle
-      className={className}
-      style={{ ...style, display: "block", background: "gray" }}
-      onClick={onClick}
-    />
-  );
-}
 
 function SimpleSlider() {
   const settings = {
@@ -77,10 +55,6 @@ const Title = styled.h1`
 const Img = styled.img`
   width: 100%;
   height: 90vh;
-`;
-
-const Circle = styled.div`
-  border-radius: 100%;
 `;
 
 export default SimpleSlider;
