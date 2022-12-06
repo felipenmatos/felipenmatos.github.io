@@ -5,7 +5,6 @@ import photoHome from "../icons/PhotoHome.png";
 import imgProfile from "../icons/photoBlack.jpg";
 import BodyTechnology from "../Components/BodyTechnology";
 import Contact from "../Components/BodyContact/contact";
-import SimpleSlider from "../Components/Slider/slider";
 import project1 from "../icons/images/project1.jpg";
 import project2 from "../icons/images/project2.jpg";
 import project3 from "../icons/images/project3.jpg";
@@ -14,6 +13,9 @@ import project5 from "../icons/images/project5.png";
 import project6 from "../icons/images/project6.jpg";
 import project7 from "../icons/images/project7.jpg";
 import project8 from "../icons/images/project8.jpg";
+import iconCode from "../icons/icons/IconCode.svg";
+import iconDesign from "../icons/icons/IconDesign.svg";
+import iconCell from "../icons/icons/iconCell.svg";
 
 const Home = () => {
   return (
@@ -36,7 +38,7 @@ const Home = () => {
             aplicativos e sistemas. Tenho constante estudo e busca por novos
             aprendizados para me especializar na stack em que atuo.
           </Description>
-          <ButtonStart>Saiba mais</ButtonStart>
+          <ButtonStart>Currículo</ButtonStart>
         </Column>
         <ImgBodyHome src={photoHome} alt="photoHome" />
       </BodyHome>
@@ -133,7 +135,32 @@ const Home = () => {
         </RowProject>
       </BodyProjects>
       <BodyCourses>
-        <SimpleSlider />
+        <Title>Serviços_</Title>
+        <RowService>
+          <CardService>
+            <Icon src={iconDesign} alt="iconDesign" />
+            <TitleService>Ui Design</TitleService>
+            <Description>
+              Desenho interface de forma que ela seja clara, objetiva e
+              principalmente intuitiva para o usuário.
+            </Description>
+          </CardService>
+          <CardService>
+            <Icon src={iconCode} alt="iconCode" />
+            <TitleService>Desenvolvimento</TitleService>
+            <Description>
+              Desenvolvo sites profissionais, blogs, portfólios, landing pages e
+              e-commerce.
+            </Description>
+          </CardService>
+          <CardService>
+            <Icon src={iconCell} alt="iconCell" />
+            <TitleService>Aplicativos Mobile</TitleService>
+            <Description>
+              Desenvolvimento de aplicativos mobile modernos.
+            </Description>
+          </CardService>
+        </RowService>
       </BodyCourses>
       <BodyTech>
         <BodyTechnology />
@@ -231,7 +258,7 @@ const Surname = styled.button`
   width: 246px;
   height: 69px;
   text-items: center;
-  background: #6a6a6a;
+  background: #e85e39;
   border-radius: 10px;
   font-family: "Inter";
   font-style: normal;
@@ -415,6 +442,47 @@ const BodyCourses = styled.div`
   margin-top: 200px;
   width: 100%;
   height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const RowService = styled.div`
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+`;
+
+const CardService = styled.div`
+  width: 270px;
+  height: 250px;
+  background-color: #282828;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+
+  :hover {
+    border: 1px solid #e85e39;
+  }
+`;
+
+const Icon = styled.img`
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+`;
+
+const TitleService = styled.p`
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
 `;
 
 const BodyTech = styled.div`
