@@ -6,6 +6,14 @@ import imgProfile from "../icons/photoBlack.jpg";
 import BodyTechnology from "../Components/BodyTechnology";
 import Contact from "../Components/BodyContact/contact";
 import SimpleSlider from "../Components/Slider/slider";
+import project1 from "../icons/images/project1.jpg";
+import project2 from "../icons/images/project2.jpg";
+import project3 from "../icons/images/project3.jpg";
+import project4 from "../icons/images/project4.jpg";
+import project5 from "../icons/images/project5.png";
+import project6 from "../icons/images/project6.jpg";
+import project7 from "../icons/images/project7.jpg";
+import project8 from "../icons/images/project8.jpg";
 
 const Home = () => {
   return (
@@ -61,30 +69,14 @@ const Home = () => {
       <BodyProjects>
         <RowProject>
           <CardProject>
-            <ImgProject />
+            <ImgProject src={project1} alt="project1" />
             <Row>
               <ButtonCard>Deploy</ButtonCard>
               <ButtonCard>Código</ButtonCard>
             </Row>
           </CardProject>
           <CardProject>
-            <ImgProject />
-            <Row>
-              <ButtonCard>Deploy</ButtonCard>
-              <ButtonCard>Código</ButtonCard>
-            </Row>
-          </CardProject>
-        </RowProject>
-        <RowProject>
-          <CardProject>
-            <ImgProject />
-            <Row>
-              <ButtonCard>Deploy</ButtonCard>
-              <ButtonCard>Código</ButtonCard>
-            </Row>
-          </CardProject>
-          <CardProject>
-            <ImgProject />
+            <ImgProject src={project2} alt="project2" />
             <Row>
               <ButtonCard>Deploy</ButtonCard>
               <ButtonCard>Código</ButtonCard>
@@ -93,14 +85,46 @@ const Home = () => {
         </RowProject>
         <RowProject>
           <CardProject>
-            <ImgProject />
+            <ImgProject src={project3} alt="project3" />
             <Row>
               <ButtonCard>Deploy</ButtonCard>
               <ButtonCard>Código</ButtonCard>
             </Row>
           </CardProject>
           <CardProject>
-            <ImgProject />
+            <ImgProject src={project4} alt="project4" />
+            <Row>
+              <ButtonCard>Deploy</ButtonCard>
+              <ButtonCard>Código</ButtonCard>
+            </Row>
+          </CardProject>
+        </RowProject>
+        <RowProject>
+          <CardProject>
+            <ImgProject src={project5} alt="project5" />
+            <Row>
+              <ButtonCard>Deploy</ButtonCard>
+              <ButtonCard>Código</ButtonCard>
+            </Row>
+          </CardProject>
+          <CardProject>
+            <ImgProject src={project6} alt="project6" />
+            <Row>
+              <ButtonCard>Deploy</ButtonCard>
+              <ButtonCard>Código</ButtonCard>
+            </Row>
+          </CardProject>
+        </RowProject>
+        <RowProject>
+          <CardProject>
+            <ImgProject src={project7} alt="project5" />
+            <Row>
+              <ButtonCard>Deploy</ButtonCard>
+              <ButtonCard>Código</ButtonCard>
+            </Row>
+          </CardProject>
+          <CardProject>
+            <ImgProject src={project8} alt="project6" />
             <Row>
               <ButtonCard>Deploy</ButtonCard>
               <ButtonCard>Código</ButtonCard>
@@ -326,27 +350,36 @@ const TitleProject = styled.h1`
 
 const BodyProjects = styled.div`
   width: 100%;
-  height: 1200px;
+  height: 1700px;
 `;
 
 const RowProject = styled.div`
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 20px;
-  margin-left: 15%;
+  margin-top: 40px;
+  margin-left: 10%;
 `;
 
 const CardProject = styled.div`
-  width: 400px;
+  width: 440px;
   height: 404px;
   background: #d9d9d9;
+  border-radius: 10px;7
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease;
+
+  :hover{
+    transform: scale(1.1);
+  }
 `;
 
 const ImgProject = styled.img`
   width: 100%;
   height: 300px;
+  cursor: pointer;
+  border-radius: 10px 10px 0px 0px;
 `;
 
 const Row = styled.div`
