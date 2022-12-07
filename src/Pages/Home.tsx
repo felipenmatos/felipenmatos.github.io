@@ -157,7 +157,7 @@ const Home = () => {
             <Icon src={iconCell} alt="iconCell" />
             <TitleService>Aplicativos Mobile</TitleService>
             <Description>
-              Desenvolvimento de aplicativos mobile modernos.
+              Desenvolvimento de aplicativos mobile sob demanda.
             </Description>
           </CardService>
         </RowService>
