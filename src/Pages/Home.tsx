@@ -392,7 +392,7 @@ const RowProject = styled.div`
 const CardProject = styled.div`
   width: 440px;
   height: 404px;
-  background: #d9d9d9;
+  background: #282828;
   border-radius: 10px;7
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: all 0.5s ease;
