@@ -9,7 +9,7 @@ import project1 from "../icons/images/project1.jpg";
 import project2 from "../icons/images/project2.jpg";
 import project3 from "../icons/images/project3.jpg";
 import project4 from "../icons/images/project4.jpg";
-import project5 from "../icons/images/project5.png";
+import project5 from "../icons/images/project5.jpg";
 import project6 from "../icons/images/project6.jpg";
 import project7 from "../icons/images/project7.jpg";
 import project8 from "../icons/images/project8.jpg";
