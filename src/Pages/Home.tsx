@@ -222,6 +222,7 @@ const ButtonMenu = styled.button`
   color: #ffffff;
   border: none;
   cursor: pointer;
+  transition: 0.3s;
 
   :hover {
     color: #6a6a6a;
@@ -291,6 +292,7 @@ const ButtonStart = styled.button`
   color: #6a6a6a;
   border: none;
   cursor: pointer;
+  transition: 0.3s;
 
   :hover {
     border: 1px solid #6a6a6a;
@@ -352,6 +354,7 @@ const ButtonProjects = styled.button`
   color: #6a6a6a;
   border: none;
   cursor: pointer;
+  transition: 0.3s;
 
   :hover {
     border: 1px solid #6a6a6a;
@@ -430,6 +433,7 @@ const ButtonCard = styled.button`
   border: none;
   cursor: pointer;
   border-radius: 10px;
+  transition: 0.3s;
 
   :hover {
     border: 1px solid #6a6a6a;
@@ -464,9 +468,11 @@ const CardService = styled.div`
   align-items: center;
   cursor: pointer;
   padding: 10px;
+  transition: 0.3s;
 
   :hover {
-    border: 1px solid #e85e39;
+    background-color: rgba(232, 94, 57, 0.37);
+    border-radius: 10px;
   }
 `;
 
