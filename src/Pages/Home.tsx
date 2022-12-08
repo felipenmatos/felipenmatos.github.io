@@ -204,6 +204,10 @@ const Header = styled.div`
 
 const Logo = styled.img`
   margin-left: 20px;
+
+  @media (max-width: 868px) {
+    width: 100px;
+  }
 `;
 
 const Menu = styled.div`
@@ -212,6 +216,10 @@ const Menu = styled.div`
   flex-direction: row;
   justify-content: space-between;
   margin-right: 20px;
+
+  @media (max-width: 868px) {
+    width: 180px;
+  }
 `;
 
 const ButtonMenu = styled.button`
@@ -227,6 +235,10 @@ const ButtonMenu = styled.button`
   :hover {
     color: #6a6a6a;
   }
+
+  @media (max-width: 868px) {
+    font-size: 14px;
+  }
 `;
 
 const BodyHome = styled.div`
@@ -236,6 +248,12 @@ const BodyHome = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 868px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Column = styled.div`
@@ -252,6 +270,10 @@ const Name = styled.p`
   font-size: 40px;
   line-height: 48px;
   color: #ffffff;
+
+  @media (max-width: 868px) {
+    font-size: 32px;
+  }
 `;
 
 const Surname = styled.button`
@@ -268,6 +290,11 @@ const Surname = styled.button`
   line-height: 48px;
   color: #ffffff;
   border: none;
+
+  @media (max-width: 868px) {
+    width: 226px;
+    font-size: 32px;
+  }
 `;
 
 const Description = styled.p`
@@ -277,6 +304,11 @@ const Description = styled.p`
   font-size: 16px;
   line-height: 24px;
   color: #909090;
+
+  @media (max-width: 868px) {
+    width: 80%;
+    font-size: 15px;
+  }
 `;
 
 const ButtonStart = styled.button`
@@ -299,6 +331,12 @@ const ButtonStart = styled.button`
     background: transparent;
     color: #ffffff;
   }
+
+  @media (max-width: 868px) {
+    width: 170px;
+    height: 39px;
+    font-size: 16px;
+  }
 `;
 
 const ImgBodyHome = styled.img`
@@ -317,6 +355,12 @@ const BodyAbout = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+
+  @media (max-width: 868px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const ColumnAbout = styled.div`
@@ -360,6 +404,10 @@ const ButtonProjects = styled.button`
     border: 1px solid #6a6a6a;
     background: transparent;
     color: #ffffff;
+  }
+
+  @media (max-width: 868px) {
+    display: none;
   }
 `;
 
