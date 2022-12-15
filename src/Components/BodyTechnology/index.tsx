@@ -39,8 +39,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   @media (max-width: 768px) {
-    margin-top: -40px;
-    margin-left: -40%;
+    margin-left: 0%;
     grid-template-columns: repeat(10, 25px);
     grid-gap: 14px;
     align-items: center;
@@ -61,8 +60,8 @@ const Img = styled.img`
   }
 
   @media (max-width: 768px) {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
   }
 `;
