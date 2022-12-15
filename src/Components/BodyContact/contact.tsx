@@ -40,7 +40,7 @@ const Container = styled.div`
   align-items: center;
 
   @media (max-width: 768px) {
-    margin-left: -40%;
+    margin-left: 0;
   }
 `;
 
