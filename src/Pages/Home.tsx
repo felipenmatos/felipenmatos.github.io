@@ -73,15 +73,32 @@ const Home = () => {
           <CardProject>
             <ImgProject src={project1} alt="project1" />
             <Row>
-              <ButtonCard>Deploy</ButtonCard>
-              <ButtonCard>Código</ButtonCard>
+              <Link
+                href="https://list-english-app.netlify.app/"
+                target="_blank"
+              >
+                Deploy
+              </Link>
+              <Link
+                href="https://github.com/felipenmatos/challenge-by-coodesh"
+                target="_blank"
+              >
+                Código
+              </Link>
             </Row>
           </CardProject>
           <CardProject>
             <ImgProject src={project2} alt="project2" />
             <Row>
-              <ButtonCard>Deploy</ButtonCard>
-              <ButtonCard>Código</ButtonCard>
+              <Link href="https://internet-plans.netlify.app/" target="_blank">
+                Deploy
+              </Link>
+              <Link
+                href="https://github.com/felipenmatos/internet_plans"
+                target="_blank"
+              >
+                Código
+              </Link>
             </Row>
           </CardProject>
         </RowProject>
@@ -89,15 +106,29 @@ const Home = () => {
           <CardProject>
             <ImgProject src={project3} alt="project3" />
             <Row>
-              <ButtonCard>Deploy</ButtonCard>
-              <ButtonCard>Código</ButtonCard>
+              <Link href="https://spacex-coodesh.netlify.app" target="_blank">
+                Deploy
+              </Link>
+              <Link
+                href="https://github.com/felipenmatos/space_x"
+                target="_blank"
+              >
+                Código
+              </Link>
             </Row>
           </CardProject>
           <CardProject>
             <ImgProject src={project4} alt="project4" />
             <Row>
-              <ButtonCard>Deploy</ButtonCard>
-              <ButtonCard>Código</ButtonCard>
+              <Link href="https://meteorology-app.netlify.app/" target="_blank">
+                Deploy
+              </Link>
+              <Link
+                href="https://github.com/felipenmatos/weather_system"
+                target="_blank"
+              >
+                Código
+              </Link>
             </Row>
           </CardProject>
         </RowProject>
@@ -105,15 +136,32 @@ const Home = () => {
           <CardProject>
             <ImgProject src={project5} alt="project5" />
             <Row>
-              <ButtonCard>Deploy</ButtonCard>
-              <ButtonCard>Código</ButtonCard>
+              <Link href="https://clickbeard.netlify.app/" target="_blank">
+                Deploy
+              </Link>
+              <Link
+                href="https://github.com/felipenmatos/clickbeard_felipe"
+                target="_blank"
+              >
+                Código
+              </Link>
             </Row>
           </CardProject>
           <CardProject>
             <ImgProject src={project6} alt="project6" />
             <Row>
-              <ButtonCard>Deploy</ButtonCard>
-              <ButtonCard>Código</ButtonCard>
+              <Link
+                href="https://animaisfantasticossite.netlify.app/"
+                target="_blank"
+              >
+                Deploy
+              </Link>
+              <Link
+                href="https://github.com/felipenmatos/projeto-origamid"
+                target="_blank"
+              >
+                Código
+              </Link>
             </Row>
           </CardProject>
         </RowProject>
@@ -121,15 +169,32 @@ const Home = () => {
           <CardProject>
             <ImgProject src={project7} alt="project5" />
             <Row>
-              <ButtonCard>Deploy</ButtonCard>
-              <ButtonCard>Código</ButtonCard>
+              <Link
+                href="https://gerenciadordetarefasfn.netlify.app/"
+                target="_blank"
+              >
+                Deploy
+              </Link>
+              <Link
+                href="https://github.com/felipenmatos/gerenciadortarefasfn"
+                target="_blank"
+              >
+                Código
+              </Link>
             </Row>
           </CardProject>
           <CardProject>
             <ImgProject src={project8} alt="project6" />
             <Row>
-              <ButtonCard>Deploy</ButtonCard>
-              <ButtonCard>Código</ButtonCard>
+              <Link href="https://sitespace.netlify.app/" target="_blank">
+                Deploy
+              </Link>
+              <Link
+                href="https://github.com/felipenmatos/site-space"
+                target="_blank"
+              >
+                Código
+              </Link>
             </Row>
           </CardProject>
         </RowProject>
@@ -192,6 +257,12 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #181818;
+  @media (max-width: 868px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
 `;
 
 const Header = styled.div`
@@ -357,6 +428,8 @@ const BodyAbout = styled.div`
   align-items: center;
 
   @media (max-width: 868px) {
+    width: 100%;
+    height: 960px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -367,6 +440,13 @@ const ColumnAbout = styled.div`
   display: flex;
   flex-direction: column;
   width: 360px;
+
+  @media (max-width: 868px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const ImgProfile = styled.img`
@@ -411,6 +491,33 @@ const ButtonProjects = styled.button`
   }
 `;
 
+const Link = styled.a`
+  width: 180px;
+  height: 49px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  background: #ffffff;
+  color: #6a6a6a;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+
+  :hover {
+    border: 1px solid #6a6a6a;
+    background: transparent;
+    color: #6a6a6a;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+`;
+
 const Title = styled.h1`
   font-family: "Inter";
   font-style: normal;
@@ -424,11 +531,23 @@ const TitleProject = styled.h1`
   font-style: normal;
   font-weight: 700;
   color: #ffffff;
+
+  @media (max-width: 868px) {
+    margin-left: 0%;
+  }
 `;
 
 const BodyProjects = styled.div`
   width: 100%;
   height: 1700px;
+
+  @media (max-width: 868px) {
+    width: 100%;
+    height: 3500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const RowProject = styled.div`
@@ -438,6 +557,15 @@ const RowProject = styled.div`
   justify-content: space-evenly;
   margin-top: 40px;
   margin-left: 10%;
+
+  @media (max-width: 868px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0%;
+    margin-top: 0px;
+  }
 `;
 
 const CardProject = styled.div`
@@ -450,6 +578,17 @@ const CardProject = styled.div`
 
   :hover{
     transform: scale(1.1);
+  }
+
+  @media (max-width: 868px) {
+    width: 400px;
+    height: 404px;
+    margin-top: 40px;
+    transition: all 0.5s ease;
+
+  :hover{
+    transform: scale(1.0);
+  }
   }
 `;
 
@@ -469,27 +608,6 @@ const Row = styled.div`
   margin-top: 20px;
 `;
 
-const ButtonCard = styled.button`
-  width: 180px;
-  height: 49px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  color: #6a6a6a;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: 0.3s;
-
-  :hover {
-    border: 1px solid #6a6a6a;
-    background: transparent;
-    color: #6a6a6a;
-  }
-`;
-
 const BodyCourses = styled.div`
   margin-top: 200px;
   width: 100%;
@@ -497,14 +615,27 @@ const BodyCourses = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 868px) {
+    width: 100%;
+    height: 1000px;
+  }
 `;
 
 const RowService = styled.div`
   width: 100%;
-  height: 500px;
+  height: 600px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+
+  @media (max-width: 868px) {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const CardService = styled.div`
@@ -521,6 +652,15 @@ const CardService = styled.div`
   :hover {
     background-color: rgba(232, 94, 57, 0.37);
     border-radius: 10px;
+  }
+
+  @media (max-width: 868px) {
+    width: 270px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
   }
 `;
 
@@ -542,6 +682,14 @@ const TitleService = styled.p`
 const BodyTech = styled.div`
   width: 100%;
   height: 200px;
+
+  @media (max-width: 868px) {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Footer = styled.div`
@@ -552,6 +700,13 @@ const Footer = styled.div`
   justify-content: center;
   align-items: center;
   background: #5a5a5a;
+
+  @media (max-width: 868px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const ImgProfileFooter = styled.img`
@@ -568,6 +723,12 @@ const DescriptionFooter = styled.p`
   font-size: 16px;
   line-height: 24px;
   color: #000;
+
+  @media (max-width: 868px) {
+    width: 80%;
+    font-size: 13px;
+    text-align: center;
+  }
 `;
 
 const RowFooter = styled.div`
