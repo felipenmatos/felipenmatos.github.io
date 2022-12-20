@@ -23,12 +23,13 @@ const Home = () => {
       <Header>
         <Logo src={logo} alt="logo" />
         <Menu>
-          <ButtonMenu>Home</ButtonMenu>
-          <ButtonMenu>About</ButtonMenu>
-          <ButtonMenu>Projects</ButtonMenu>
+          <ButtonMenu href="#home">Home</ButtonMenu>
+          <ButtonMenu href="#about">About</ButtonMenu>
+          <ButtonMenu href="#projects">Projects</ButtonMenu>
+          <ButtonMenu href="#contact">Contact</ButtonMenu>
         </Menu>
       </Header>
-      <BodyHome>
+      <BodyHome id="home">
         <Column>
           <Name>Felipe</Name>
           <Surname>Nonato</Surname>
@@ -42,7 +43,7 @@ const Home = () => {
         </Column>
         <ImgBodyHome src={photoHome} alt="photoHome" />
       </BodyHome>
-      <BodyAbout>
+      <BodyAbout id="about">
         <ColumnAbout>
           <ImgProfile src={imgProfile} alt="imgProfile" />
           <ButtonProjects>Projetos</ButtonProjects>
@@ -67,10 +68,10 @@ const Home = () => {
           </Description>
         </ColumnAbout>
       </BodyAbout>
-      <TitleProject>Projetos_</TitleProject>
+      <TitleProject id="projects">Projetos_</TitleProject>
       <BodyProjects>
         <RowProject>
-          <CardProject>
+          <CardProject data-move-x="200px">
             <ImgProject src={project1} alt="project1" />
             <Row>
               <Link
@@ -87,7 +88,7 @@ const Home = () => {
               </Link>
             </Row>
           </CardProject>
-          <CardProject>
+          <CardProject data-move-x="200px">
             <ImgProject src={project2} alt="project2" />
             <Row>
               <Link href="https://internet-plans.netlify.app/" target="_blank">
@@ -230,7 +231,7 @@ const Home = () => {
       <BodyTech>
         <BodyTechnology />
       </BodyTech>
-      <Footer>
+      <Footer id="contact">
         <Title>Contato</Title>
         <DescriptionFooter>
           Precisa de um desenvolvedor front-end? Vamos trabalhar juntos!
@@ -282,18 +283,18 @@ const Logo = styled.img`
 `;
 
 const Menu = styled.div`
-  width: 220px;
+  width: 280px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-right: 20px;
 
   @media (max-width: 868px) {
-    width: 180px;
+    width: 220px;
   }
 `;
 
-const ButtonMenu = styled.button`
+const ButtonMenu = styled.a`
   background: transparent;
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -302,6 +303,7 @@ const ButtonMenu = styled.button`
   border: none;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 
   :hover {
     color: #6a6a6a;
